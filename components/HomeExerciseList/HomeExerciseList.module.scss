@@ -1,0 +1,65 @@
+.homeExerciseList {
+  .options {
+    background: #f1f2f6;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: flex;
+  }
+  .exerciseListTable {
+    border-radius: 0.5em;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.75); // Semi-transparent white
+    border: 1px solid rgba(255, 255, 255, 0.2); // Thin white border
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.1); // Subtle shadow
+    margin: 1em 0;
+    font-weight: 500;
+    font-size: 0.95em;
+    color: rgb(112, 112, 112);
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr {
+      th,
+      td {
+        text-align: left;
+        text-transform: capitalize;
+        padding: 0.65em 1em;
+      }
+      &:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+      th {
+        padding: 1.25em 1em;
+        font-weight: 500;
+        background-color: #f2f2f2;
+        font-size: 0.9em;
+      }
+    }
+    .bodyPart {
+      display: flex;
+      align-items: center;
+
+      .coloredDot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        margin-right: 8px; // some spacing between the dot and the text
+      }
+    }
+    .part {
+      color: black;
+    }
+    .pagination {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
+      button {
+        margin: 1em;
+        background: linear-gradient(135deg, #3a1fa5, #37a5ff);
+        color: white;
+        padding: 0.5em 1.5em;
+      }
+    }
+  }
+}

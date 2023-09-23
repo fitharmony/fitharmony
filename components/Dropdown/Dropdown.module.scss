@@ -1,0 +1,18 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5em;
+  select {
+    background: white;
+    padding: 0.45em;
+    font-weight: 500;
+    border: 2px solid #dfe5ec;
+    border-radius: 0.5em;
+  }
+  label {
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-bottom: 0.25em;
+    color: rgb(44, 44, 44);
+  }
+}

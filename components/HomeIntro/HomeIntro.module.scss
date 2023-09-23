@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.homeIntro {
+  text-align: center;
+  padding: 3.5em 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: $font-size-h1;
+  }
+  p {
+    width: 75%;
+    font-weight: 400;
+    margin: 1em auto;
+  }
+  button {
+    color: white;
+    margin-top: 1em;
+    background: #3a1fa5;
+    background: linear-gradient(135deg, #3a1fa5, #37a5ff);
+  }
+}

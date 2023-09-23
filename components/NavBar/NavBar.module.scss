@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .titleOptions {
+    display: flex;
+    align-items: center;
+    .navTitle {
+      display: flex;
+      align-items: center;
+      img {
+        height: 75px;
+        width: 75px;
+      }
+      margin-right: 2.15em;
+    }
+    .options {
+      display: flex;
+      align-items: center;
+      a {
+        margin: 0 1.5em;
+      }
+    }
+  }
+  a {
+    font-weight: 500;
+  }
+}
