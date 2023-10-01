@@ -3,13 +3,18 @@ import styles from "./Layout.module.scss";
 import NavBar from "../NavBar/NavBar";
 import FixedGradient from "../FixedGradient";
 
-const Layout = ({ children }) => {
-  return (
-    <main className={styles.layout}>
+const Layout = ({ children, showNav = true, style = {} }) => {
+  return showNav ? (
+    <main className={styles.layout} style={style}>
       <NavBar />
       <div className={styles.children}>{children}</div>
       <FixedGradient />
     </main>
+  ) : (
+    <div className={`${styles.layout} ${styles.noNav}`} style={style}>
+      <div className={styles.children}>{children}</div>
+      <FixedGradient />
+    </div>
   );
 };
 

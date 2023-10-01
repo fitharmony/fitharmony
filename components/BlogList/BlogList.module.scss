@@ -1,2 +1,8 @@
 .blogCtr {
+  .blogList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  background: linear-gradient(to top, #1b0086a2, #3300ffa2);
 }

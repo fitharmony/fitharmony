@@ -21,8 +21,9 @@ export default function Home() {
       <Layout>
         <HomeIntro />
         <HomeExerciseList />
-        <BlogList />
       </Layout>
+
+      <BlogList />
     </main>
   );
 }
