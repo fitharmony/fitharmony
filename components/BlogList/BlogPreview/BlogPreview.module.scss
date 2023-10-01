@@ -1,8 +1,40 @@
 .blogPreview {
-  height: 350px;
-  width: 575px;
+  display: flex;
+  height: 300px;
+  width: 375px;
   background: white;
-  margin-bottom: 1em;
   border-radius: 0.5em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.1); // Subtle shadow
+  margin-bottom: 1em;
+  padding: 1em;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.1);
+  .blogImg {
+    height: 135px;
+    min-width: 125px;
+    width: 125px;
+    background: rgba(128, 128, 128, 0.47);
+    border-radius: 0.25em;
+    margin-right: 0.75em;
+  }
+  .blogPreviewContent {
+    line-height: 150%;
+    .category {
+      font-weight: 600;
+      background: linear-gradient(to left, #170075, #0051ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h3 {
+      margin: 0.25em 0;
+    }
+    p {
+      font-size: 0.9em;
+      line-height: 137.5%;
+      color: #57606a;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 4; /* number of lines to show */
+    }
+  }
 }
