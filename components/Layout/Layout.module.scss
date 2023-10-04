@@ -8,5 +8,8 @@
   // NoNav variant
   &.noNav {
     width: 100%;
+    .children {
+      padding-top: 0;
+    }
   }
 }

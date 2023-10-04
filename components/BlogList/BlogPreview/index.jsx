@@ -4,7 +4,10 @@ import styles from "./BlogPreview.module.scss";
 const BlogPost = () => {
   return (
     <div className={styles.blogPreview}>
-      <div className={styles.blogImg}>{/* TODO: */}</div>
+      <img
+        className={styles.blogImg}
+        src="https://images.pexels.com/photos/1865131/pexels-photo-1865131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
       <div className={styles.blogPreviewContent}>
         <div className={styles.category}>Engineering</div>
         <h3>GitHub Learning Pathways: Learn from the best</h3>
