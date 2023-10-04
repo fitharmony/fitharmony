@@ -16,8 +16,10 @@ const BlogPost = () => {
           tutorials, boosting productivity, enhancing security, and enabling
           seamless collaboration.
         </p>
-        <div className={styles.author}>Robb Mapp</div>
-        <div className={styles.datePosted}>September 28, 2023</div>
+        <div className={styles.authDpCtr}>
+          <div className={styles.author}>Robb Mapp</div>
+          <div className={styles.datePosted}>September 28, 2023</div>
+        </div>
       </div>
     </div>
   );

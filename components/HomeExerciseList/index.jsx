@@ -91,49 +91,4 @@ const HomeExerciseList = () => {
   );
 };
 
-// const HomeExerciseList = () => {
-//   return (
-//     <div className={styles.homeExerciseList}>
-//       <div className={styles.options}>
-//         <Dropdown options={data.bodyParts} label="Sort By Body Part" />
-//         <Dropdown options={data.equipment} label="Sort By Equipment" />
-//       </div>
-//       <table className={styles.exerciseListTable}>
-//         <thead>
-//           <tr>
-//             <th>Exercise Name</th>
-//             <th>Body Part</th>
-//             <th>Target Muscle</th>
-//             <th>Equipment</th>
-//             <th>Action</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {data.exercises.map((exercise) => (
-//             <tr key={exercise.id}>
-//               <td className={styles.part}>
-//                 <Link href={`/exercises/${exercise.id}/`}>{exercise.name}</Link>
-//               </td>
-//               <td className={styles.bodyPart}>
-//                 <span
-//                   className={styles.coloredDot}
-//                   style={{ backgroundColor: bodyPartColors[exercise.bodyPart] }}
-//                 />
-//                 {exercise.bodyPart}
-//               </td>
-//               <td>{exercise.target}</td>
-//               <td>{exercise.equipment}</td>
-//               <td>
-//                 <button className={styles.viewButton}>
-//                   <FontAwesomeIcon icon={faEyeSlash} />
-//                 </button>
-//               </td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
 export default HomeExerciseList;
