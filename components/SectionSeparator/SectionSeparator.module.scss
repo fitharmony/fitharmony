@@ -1,0 +1,33 @@
+.ss {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  opacity: 0.15;
+  margin-bottom: 0.5em;
+
+  .title {
+    white-space: nowrap;
+    font-size: 1.65em;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: linear-gradient(to left, #170075, #0051ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 175px; // Or whatever width works best for your design
+    height: 100%;
+    background: linear-gradient(to right, white 35%, transparent);
+  }
+
+  &:after {
+    right: 0;
+    background: linear-gradient(to left, white 35%, transparent);
+  }
+}
