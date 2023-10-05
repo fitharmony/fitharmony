@@ -1,10 +1,10 @@
 .gradientComponent {
-  position: fixed;
+  position: absolute;
   z-index: -1;
-  bottom: -30vh;
-  left: 0;
+  top: -35vh;
+  right: 0;
   width: 100vw;
   height: 55%;
-  background: linear-gradient(to top, #461cf0a2, #37a5ffa4, transparent);
-  transform: skewY(-12.5deg);
+  background: linear-gradient(to bottom, #461cf02f, #37a5ff30, transparent);
+  transform: skewY(12.5deg);
 }

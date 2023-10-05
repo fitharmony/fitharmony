@@ -21,7 +21,7 @@ const HomeExerciseList = () => {
 
   return (
     <div>
-      <SectionSeparator title="Exercises" />
+      {/* <SectionSeparator title="Exercises" /> */}
       <div className={styles.homeExerciseList}>
         <div className={styles.options}>
           <Dropdown options={data.bodyParts} label="Sort By Body Part" />

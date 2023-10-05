@@ -3,7 +3,7 @@ import styles from "./BlogPreview.module.scss";
 
 const BlogPost = () => {
   return (
-    <div className={styles.blogPreview}>
+    <a className={styles.blogPreview}>
       <img
         className={styles.blogImg}
         src="https://images.pexels.com/photos/1865131/pexels-photo-1865131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -21,7 +21,7 @@ const BlogPost = () => {
           <div className={styles.datePosted}>September 28, 2023</div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -8,7 +8,7 @@ const BlogList = () => {
   return (
     <div className={styles.blogCtr}>
       <Layout showNav={false}>
-        <SectionSeparator title="BLOGS" />
+        {/* <SectionSeparator title="BLOGS" /> */}
         <div className={styles.blogList}>
           {/* TODO: Add from files. Add see all button (need all blogs page) */}
           <BlogPost />

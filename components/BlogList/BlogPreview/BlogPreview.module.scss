@@ -50,4 +50,13 @@
       }
     }
   }
+  &:hover {
+    .blogPreviewContent {
+      h3 {
+        background: linear-gradient(to left, #170075, #0051ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }
