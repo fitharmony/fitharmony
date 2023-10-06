@@ -58,7 +58,7 @@ const HomeExerciseList = () => {
                 <td>{exercise.equipment}</td>
                 <td>
                   <button className={styles.viewButton}>
-                    <FontAwesomeIcon icon={faEyeSlash} />
+                    <FontAwesomeIcon icon={faEyeSlash} className={styles.svg} />
                   </button>
                 </td>
               </tr>
