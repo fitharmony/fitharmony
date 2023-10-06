@@ -20,9 +20,26 @@
       a {
         margin: 0 1.5em;
       }
+      .featuredCtr {
+        display: flex;
+        align-items: center;
+        .featured {
+          background: rgba(255, 0, 0, 0.4);
+          padding: 1.5px 5.5px;
+          border-radius: 0.15em;
+          border: 1px solid rgb(255, 5, 5);
+          font-size: 0.65em;
+          color: white;
+          font-weight: 600;
+          margin-left: -1.5em;
+        }
+      }
     }
   }
   a {
     font-weight: 500;
+    button {
+      background: white;
+    }
   }
 }
