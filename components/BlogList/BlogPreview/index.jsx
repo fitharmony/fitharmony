@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./BlogPreview.module.scss";
 
 const BlogPost = () => {
@@ -17,7 +19,12 @@ const BlogPost = () => {
           seamless collaboration.
         </p>
         <div className={styles.authDpCtr}>
-          <div className={styles.author}>Robb Mapp</div>
+          <div className={styles.author}>
+            <div className={styles.authorImg}>
+              <FontAwesomeIcon icon={faUser} className={styles.svg} />
+            </div>
+            Robb Mapp
+          </div>
           <div className={styles.datePosted}>September 28, 2023</div>
         </div>
       </div>
