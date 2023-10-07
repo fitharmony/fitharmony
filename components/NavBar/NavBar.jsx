@@ -2,15 +2,18 @@ import React from "react";
 import styles from "./NavBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
     <div className={styles.nav}>
       <div className={styles.titleOptions}>
-        <div className={styles.navTitle}>
-          <img src="/logo.png" />
-          <h2>BodyBits</h2>
-        </div>
+        <Link href="/">
+          <div className={styles.navTitle}>
+            <img src="/logo.png" />
+            <h2>BodyBits</h2>
+          </div>
+        </Link>
         <div className={styles.options}>
           <a>Fitness Blog</a>
           <a>Exercises</a>

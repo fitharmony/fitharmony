@@ -12,9 +12,8 @@ function ExercisePage() {
   console.log(router.query);
 
   // Fetch the specific exercise data using the exerciseName, or display it as needed.
-  const selectedExercise = data.exercises.find(
-    (exercise) => exercise.id === id
-  );
+  const selectedExercise =
+    data.exercises.find((exercise) => exercise.id === id) || data.exercises[0];
 
   const exercisesWithThisBodypart = data.exercises.filter(
     (exercise) => exercise.bodyPart === selectedExercise.bodyPart
