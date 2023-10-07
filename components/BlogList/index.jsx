@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./BlogList.module.scss";
 import Layout from "../Layout";
 import BlogPost from "./BlogPreview";
-import SectionSeparator from "../SectionSeparator";
 
 const BlogList = () => {
   return (

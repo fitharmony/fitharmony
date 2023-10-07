@@ -51,4 +51,13 @@ button {
   display: flex;
   align-items: center;
   margin: 0.35em 0;
+  a {
+    font-weight: 500;
+    text-transform: capitalize;
+    &:hover {
+      background: linear-gradient(to left, #170075, #0051ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }

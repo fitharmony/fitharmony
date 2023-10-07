@@ -4,6 +4,7 @@ import Head from "next/head";
 import data from "../../public/wed.json";
 import ExerciseCard from "../../components/ExerciseCard";
 import TextChip from "../../components/TextChip";
+import Link from "next/link";
 
 function ExercisePage() {
   const router = useRouter();
@@ -39,7 +40,9 @@ function ExercisePage() {
             <div className="exercise-list">
               {exercisesWithThisBodypart.map((exercise) => (
                 <div className="exercise-liketype" key={exercise.id}>
-                  <p>{exercise.name}</p>
+                  <Link href={`/exercises/${exercise.id}/`}>
+                    {exercise.name}
+                  </Link>
                   <TextChip title={exercise.target || "Target"} />
                 </div>
               ))}
