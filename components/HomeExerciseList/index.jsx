@@ -13,7 +13,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { bodyPartColors } from "../../helpers";
 import Link from "next/link";
-import SectionSeparator from "../SectionSeparator";
 
 const HomeExerciseList = () => {
   const itemsPerPage = 12; // Set the desired number of exercises per page

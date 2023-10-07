@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import Head from "next/head";
 import data from "../../public/wed.json";
 import ExerciseCard from "../../components/ExerciseCard";
+import TextChip from "../../components/TextChip";
 
 function ExercisePage() {
   const router = useRouter();
@@ -12,6 +13,10 @@ function ExercisePage() {
   // Fetch the specific exercise data using the exerciseName, or display it as needed.
   const selectedExercise = data.exercises.find(
     (exercise) => exercise.id === id
+  );
+
+  const exercisesWithThisBodypart = data.exercises.filter(
+    (exercise) => exercise.bodyPart === selectedExercise.bodyPart
   );
 
   return (
@@ -28,6 +33,19 @@ function ExercisePage() {
       </Head>
       <Layout>
         <ExerciseCard selectedExercise={selectedExercise} />
+        {exercisesWithThisBodypart.length > 1 && (
+          <div className="container">
+            <h2>Other exercises for {selectedExercise.bodyPart}</h2>
+            <div className="exercise-list">
+              {exercisesWithThisBodypart.map((exercise) => (
+                <div className="exercise-liketype" key={exercise.id}>
+                  <p>{exercise.name}</p>
+                  <TextChip title={exercise.target || "Target"} />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </Layout>
     </main>
   );
