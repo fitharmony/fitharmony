@@ -36,7 +36,7 @@ function ExercisePage() {
         <ExerciseCard selectedExercise={selectedExercise} />
         {exercisesWithThisBodypart.length > 1 && (
           <div className="container">
-            <h2>Other exercises for {selectedExercise.bodyPart}</h2>
+            <h2>Other exercises targetting {selectedExercise.bodyPart}</h2>
             <div className="exercise-list">
               {exercisesWithThisBodypart.map((exercise) => (
                 <div className="exercise-liketype" key={exercise.id}>

@@ -1,14 +1,15 @@
 .textChip {
   color: #3f3f3f;
   border: 1px solid #3f3f3f;
-  font-size: 0.7em;
-  background: #3f3f3f26;
+  font-size: 0.65em;
+  background: #3f3f3f16;
   padding: 0.15em 0.5em;
   border-radius: 0.25em;
   margin: 0 0.75em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  font-weight: 500;
   .svg {
     height: 12px;
     width: 12px;

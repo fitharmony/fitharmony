@@ -6,7 +6,10 @@ const ExerciseCard = ({ selectedExercise }) => {
   return (
     <div className={styles.exerciseCard}>
       {" "}
-      <h1>Exercise Details for {selectedExercise.name}</h1>
+      <h1>
+        Exercise Details for{" "}
+        <span className={styles.name}>"{selectedExercise.name}"</span>
+      </h1>
       {/* Here, you'd display the details and description of the exercise. */}
       <p>{selectedExercise?.description}</p>
     </div>
