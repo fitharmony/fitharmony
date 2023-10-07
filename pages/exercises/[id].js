@@ -5,6 +5,7 @@ import data from "../../public/wed.json";
 import ExerciseCard from "../../components/ExerciseCard";
 import TextChip from "../../components/TextChip";
 import Link from "next/link";
+import Footer from "../../components/Footer";
 
 function ExercisePage() {
   const router = useRouter();
@@ -49,6 +50,7 @@ function ExercisePage() {
           </div>
         )}
       </Layout>
+      <Footer />
     </main>
   );
 }

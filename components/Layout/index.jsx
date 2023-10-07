@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Layout.module.scss";
 import NavBar from "../NavBar/NavBar";
 import FixedGradient from "../FixedGradient";
+import Footer from "../Footer";
 
 const Layout = ({ children, showNav = true, style = {} }) => {
   return showNav ? (

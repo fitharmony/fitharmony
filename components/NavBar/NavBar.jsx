@@ -10,7 +10,7 @@ const NavBar = () => {
       <div className={styles.titleOptions}>
         <Link href="/">
           <div className={styles.navTitle}>
-            <img src="/logo.png" />
+            <img src="/logo.png" alt="logo" />
             <h2>BodyBits</h2>
           </div>
         </Link>

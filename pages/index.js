@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import HomeIntro from "../components/HomeIntro";
 import HomeExerciseList from "../components/HomeExerciseList";
 import BlogList from "../components/BlogList";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </Layout>
 
       <BlogList />
+      <Footer />
     </main>
   );
 }
