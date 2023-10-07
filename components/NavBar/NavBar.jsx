@@ -13,7 +13,7 @@ const NavBar = () => {
         </div>
         <div className={styles.options}>
           <a>Fitness Blog</a>
-          <a>About</a>
+          <a>Exercises</a>
           <div className={styles.featuredCtr}>
             <a>Featured Products</a>
             <div className={styles.featured}>🔥HOT</div>

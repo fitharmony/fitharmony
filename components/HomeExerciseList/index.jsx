@@ -4,7 +4,13 @@ import data from "../../public/wed.json";
 import styles from "./HomeExerciseList.module.scss";
 import Dropdown from "../Dropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowsToEye,
+  faDoorOpen,
+  faEyeLowVision,
+  faEyeSlash,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import { bodyPartColors } from "../../helpers";
 import Link from "next/link";
 import SectionSeparator from "../SectionSeparator";
@@ -58,7 +64,10 @@ const HomeExerciseList = () => {
                 <td>{exercise.equipment}</td>
                 <td>
                   <button className={styles.viewButton}>
-                    <FontAwesomeIcon icon={faEyeSlash} className={styles.svg} />
+                    <FontAwesomeIcon
+                      icon={faMagnifyingGlass}
+                      className={styles.svg}
+                    />
                   </button>
                 </td>
               </tr>

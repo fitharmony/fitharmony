@@ -37,10 +37,12 @@
       }
       td {
         .viewButton {
-          padding: 0.15em 1em;
+          padding: 0.25em 1em;
+          opacity: 1;
           .svg {
-            height: 15px;
-            width: 15px;
+            height: 12.5px;
+            width: 12.5px;
+            color: black;
           }
         }
       }
