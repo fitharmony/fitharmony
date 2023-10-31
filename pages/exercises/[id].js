@@ -10,7 +10,6 @@ import Footer from "../../components/Footer";
 function ExercisePage() {
   const router = useRouter();
   const { id } = router.query;
-  console.log(router.query);
 
   // Fetch the specific exercise data using the exerciseName, or display it as needed.
   const selectedExercise =
@@ -36,7 +35,7 @@ function ExercisePage() {
         <ExerciseCard selectedExercise={selectedExercise} />
         {exercisesWithThisBodypart.length > 1 && (
           <div className="container">
-            <h2>Other exercises targetting {selectedExercise.bodyPart}</h2>
+            <h3>OTHER EXERCISES TARGETTING {selectedExercise.bodyPart}</h3>
             <div className="exercise-list">
               {exercisesWithThisBodypart.map((exercise) => (
                 <div className="exercise-liketype" key={exercise.id}>

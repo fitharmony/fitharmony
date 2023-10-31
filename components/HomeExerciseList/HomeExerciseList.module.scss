@@ -44,6 +44,9 @@
             width: 12.5px;
             color: black;
           }
+          font-size: 0.8em;
+          color: black;
+          font-weight: 600;
         }
       }
     }
@@ -72,6 +75,13 @@
         color: white;
         padding: 0.5em 1.5em;
       }
+    }
+    .noData {
+      font-style: italic;
+      font-weight: 400;
+      opacity: 0.65;
+      text-align: center;
+      padding-top: 3em;
     }
   }
 }

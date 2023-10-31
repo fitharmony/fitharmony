@@ -1,34 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import data from "../../public/wed.json";
 import styles from "./HomeExerciseList.module.scss";
 import Dropdown from "../Dropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowsToEye,
-  faDoorOpen,
-  faEyeLowVision,
-  faEyeSlash,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { bodyPartColors } from "../../helpers";
 import Link from "next/link";
 
 const HomeExerciseList = () => {
-  const itemsPerPage = 12; // Set the desired number of exercises per page
+  const itemsPerPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
-  const maxPage = Math.ceil(data.exercises.length / itemsPerPage);
+  const [searchTerm, setSearchTerm] = useState(""); // State variable for the search term
 
-  const paginatedData = data.exercises.slice(
+  // Filter the exercises based on the search term
+  const filteredExercises = data.exercises.filter((exercise) =>
+    exercise.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const maxPage = Math.ceil(filteredExercises.length / itemsPerPage);
+
+  const paginatedData = filteredExercises.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
+
+  useEffect(() => {
+    setCurrentPage(1); // Reset page to 1 when search term changes
+  }, [searchTerm]);
 
   return (
     <div>
       {/* <SectionSeparator title="Exercises" /> */}
       <div className={styles.homeExerciseList}>
         <div className={styles.options}>
+          <div>
+            <label className="dropdownLabel" htmlFor="search-list">
+              Search By Name
+            </label>
+            <input
+              id="search-list"
+              type="text"
+              placeholder="Search by exercise name..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
           <Dropdown options={data.bodyParts} label="Sort By Body Part" />
           <Dropdown options={data.equipment} label="Sort By Equipment" />
         </div>
@@ -43,35 +60,44 @@ const HomeExerciseList = () => {
             </tr>
           </thead>
           <tbody>
-            {paginatedData.map((exercise) => (
-              <tr key={exercise.id}>
-                <td className={styles.part}>
-                  <Link href={`/exercises/${exercise.id}/`}>
-                    {exercise.name}
-                  </Link>
-                </td>
-                <td className={styles.bodyPart}>
-                  <span
-                    className={styles.coloredDot}
-                    style={{
-                      backgroundColor: bodyPartColors[exercise.bodyPart],
-                    }}
-                  />
-                  {exercise.bodyPart}
-                </td>
-                <td>{exercise.target}</td>
-                <td>{exercise.equipment}</td>
-                <td>
-                  <button className={styles.viewButton}>
-                    <FontAwesomeIcon
+            {paginatedData.length > 0 ? (
+              paginatedData.map((exercise) => (
+                <tr key={exercise.id}>
+                  <td className={styles.part}>
+                    <Link href={`/exercises/${exercise.id}/`}>
+                      {exercise.name}
+                    </Link>
+                  </td>
+                  <td className={styles.bodyPart}>
+                    <span
+                      className={styles.coloredDot}
+                      style={{
+                        backgroundColor: bodyPartColors[exercise.bodyPart],
+                      }}
+                    />
+                    {exercise.bodyPart}
+                  </td>
+                  <td>{exercise.target}</td>
+                  <td>{exercise.equipment}</td>
+                  <td>
+                    <button className={styles.viewButton}>
+                      {/* <FontAwesomeIcon
                       icon={faMagnifyingGlass}
                       className={styles.svg}
-                    />
-                  </button>
+                    /> */}
+                      DETAILS
+                    </button>
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="5" className={styles.noData}>
+                  No exercises with this name found
                 </td>
               </tr>
-            ))}
-          </tbody>{" "}
+            )}
+          </tbody>
           <tfoot>
             <tr>
               <td colSpan="5" style={{ textAlign: "center" }}>

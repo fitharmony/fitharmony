@@ -60,3 +60,18 @@ button {
     }
   }
 }
+.dropdownLabel {
+  display: block;
+  font-size: 0.85em;
+  font-weight: 500;
+  margin-bottom: 0.25em;
+  color: rgb(44, 44, 44);
+}
+input[type="text"] {
+  background: white;
+  padding: 0.45em;
+  font-weight: 500;
+  border: 2px solid #dfe5ec;
+  border-radius: 0.5em;
+  margin-right: 1.5em;
+}
