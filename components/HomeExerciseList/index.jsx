@@ -3,13 +3,11 @@ import { useState } from "react";
 import data from "../../public/wed.json";
 import styles from "./HomeExerciseList.module.scss";
 import Dropdown from "../Dropdown";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { bodyPartColors } from "../../helpers";
 import Link from "next/link";
 
 const HomeExerciseList = () => {
-  const itemsPerPage = 12;
+  const itemsPerPage = 15;
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState(""); // State variable for the search term
 
@@ -112,14 +110,14 @@ const HomeExerciseList = () => {
                     Prev
                   </button>
                   <span>
-                    Page {currentPage} of {maxPage}
+                    Page {maxPage > 0 ? currentPage : 0} of {maxPage}
                   </span>
                   <button
                     className={styles.pageButton}
                     onClick={() =>
                       setCurrentPage((prev) => Math.min(prev + 1, maxPage))
                     }
-                    disabled={currentPage === maxPage}
+                    disabled={currentPage === maxPage || maxPage === 0}
                   >
                     Next
                   </button>
