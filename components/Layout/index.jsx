@@ -4,10 +4,15 @@ import NavBar from "../NavBar/NavBar";
 import FixedGradient from "../FixedGradient";
 import Footer from "../Footer";
 
-const Layout = ({ children, showNav = true, style = {} }) => {
+const Layout = ({
+  children,
+  showNav = true,
+  navTheme = "dark",
+  style = {},
+}) => {
   return showNav ? (
     <main className={styles.layout} style={style}>
-      <NavBar />
+      <NavBar navTheme={navTheme} />
       <div className={styles.children}>{children}</div>
       <FixedGradient />
     </main>

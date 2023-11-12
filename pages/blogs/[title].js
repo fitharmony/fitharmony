@@ -4,14 +4,15 @@ import Head from "next/head";
 import data from "../../public/blogs.json";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import BlogIntro from "../../components/BlogIntro";
 
 function BlogPage() {
   const router = useRouter();
-  const { id } = router.query;
+  const { title } = router.query;
 
   // Fetch the specific blog data
   const selectedBlog =
-    data.blogList.find((blog) => blog.title === id) || data.blogList[0];
+    data.blogList.find((blog) => blog.title === title) || data.blogList[0];
 
   return (
     <main>
@@ -25,8 +26,10 @@ function BlogPage() {
           rel="stylesheet"
         />
       </Head>
-      <Layout>
-        <h1>BLOG TITLE</h1>
+      <Layout showNav={true} navTheme="white">
+        <BlogIntro />
+        <img src={selectedBlog.imageUrl} />
+        <h1>{selectedBlog.title}</h1>
       </Layout>
       <Footer />
     </main>

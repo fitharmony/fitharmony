@@ -42,4 +42,17 @@
       background: white;
     }
   }
+  // White theme
+  &.white {
+    .options {
+      a {
+        color: white;
+      }
+    }
+    .navTitle {
+      h2 {
+        color: white;
+      }
+    }
+  }
 }

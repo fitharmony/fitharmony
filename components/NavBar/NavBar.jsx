@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-const NavBar = () => {
+const NavBar = ({ navTheme = "dark" }) => {
   return (
-    <div className={styles.nav}>
+    <div className={`${styles.nav} ${styles[navTheme]}`}>
       <div className={styles.titleOptions}>
         <Link href="/">
           <div className={styles.navTitle}>
