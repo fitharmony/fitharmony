@@ -3,29 +3,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./BlogPreview.module.scss";
 
-const BlogPost = () => {
+const BlogPost = ({ blogData }) => {
   return (
     <a className={styles.blogPreview}>
-      <img
-        className={styles.blogImg}
-        src="https://images.pexels.com/photos/1865131/pexels-photo-1865131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
+      <img className={styles.blogImg} src={blogData.imageUrl} />
       <div className={styles.blogPreviewContent}>
-        <div className={styles.category}>Engineering</div>
-        <h3>GitHub Learning Pathways: Learn from the best</h3>
-        <p>
-          Gain expertise and insights from top organizations through guided
-          tutorials, boosting productivity, enhancing security, and enabling
-          seamless collaboration.
-        </p>
+        <div className={styles.category}>{blogData.category}</div>
+        <h3>{blogData.title}</h3>
+        <p>{blogData.description}</p>
         <div className={styles.authDpCtr}>
           <div className={styles.author}>
             <div className={styles.authorImg}>
               <FontAwesomeIcon icon={faUser} className={styles.svg} />
             </div>
-            Robb Mapp
+            {blogData.author}
           </div>
-          <div className={styles.datePosted}>September 28, 2023</div>
+          <div className={styles.datePosted}>{blogData["date-posted"]}</div>
         </div>
       </div>
     </a>

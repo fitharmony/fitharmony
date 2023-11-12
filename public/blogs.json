@@ -1,0 +1,12 @@
+{
+  "blogList": [
+    {
+      "title": "BodyBits Test Blog Post",
+      "category": "Fitness",
+      "author": "Danny Dimes",
+      "date-posted": "November 12, 2023",
+      "description": "Gain expertise and insights from top organizations through guided tutorials, boosting productivity, enhancing security, and enabling seamless collaboration.",
+      "imageUrl": "https://images.pexels.com/photos/1865131/pexels-photo-1865131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}

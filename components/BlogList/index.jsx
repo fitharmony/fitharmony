@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./BlogList.module.scss";
 import Layout from "../Layout";
 import BlogPost from "./BlogPreview";
+import blogList from "../../public/blogs.json";
 
 const BlogList = () => {
   return (
@@ -10,12 +11,12 @@ const BlogList = () => {
         {/* <SectionSeparator title="BLOGS" /> */}
         <div className={styles.blogList}>
           {/* TODO: Add from files. Add see all button (need all blogs page) */}
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
+          <BlogPost blogData={blogList.blogList[0]} />
+          <BlogPost blogData={blogList.blogList[0]} />
+          <BlogPost blogData={blogList.blogList[0]} />
+          <BlogPost blogData={blogList.blogList[0]} />
+          <BlogPost blogData={blogList.blogList[0]} />
+          <BlogPost blogData={blogList.blogList[0]} />
         </div>
       </Layout>
     </div>
