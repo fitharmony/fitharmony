@@ -2,10 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./BlogPreview.module.scss";
+import Link from "next/link";
 
 const BlogPost = ({ blogData }) => {
   return (
-    <a className={styles.blogPreview}>
+    <Link href={`/blogs/${blogData.title}/`} className={styles.blogPreview}>
       <img className={styles.blogImg} src={blogData.imageUrl} />
       <div className={styles.blogPreviewContent}>
         <div className={styles.category}>{blogData.category}</div>
@@ -21,7 +22,7 @@ const BlogPost = ({ blogData }) => {
           <div className={styles.datePosted}>{blogData["date-posted"]}</div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
