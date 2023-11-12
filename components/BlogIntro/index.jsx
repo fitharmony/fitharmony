@@ -5,7 +5,10 @@ const BlogIntro = ({ blogData }) => {
   return (
     <div className={styles.blogIntroCtr}>
       <div className={styles.blogIntroBg} />
-      BlogIntro
+      <div className={styles.category}>{blogData.category}</div>
+      <h1>{blogData.title}</h1>
+      <p>{blogData.description}</p>
+      <img src={blogData.imageUrl} />
     </div>
   );
 };

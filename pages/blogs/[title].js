@@ -27,9 +27,7 @@ function BlogPage() {
         />
       </Head>
       <Layout showNav={true} navTheme="white">
-        <BlogIntro />
-        <img src={selectedBlog.imageUrl} />
-        <h1>{selectedBlog.title}</h1>
+        <BlogIntro blogData={selectedBlog} />
       </Layout>
       <Footer />
     </main>
