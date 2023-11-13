@@ -4,10 +4,13 @@
   .blogImg {
     height: 400px;
     width: 100%;
+    min-height: 400px;
+    min-width: 100%;
     object-fit: cover;
     background: rgba(128, 128, 128, 0.47);
     border-radius: 0.25em;
     margin-right: 0.75em;
+    background: grey;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.065), 0 10px 30px rgba(0, 0, 0, 0.065); // Subtle shadow
   }
   .blogPreviewContent {

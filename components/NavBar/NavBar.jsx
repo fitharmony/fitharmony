@@ -23,9 +23,10 @@ const NavBar = ({ navTheme = "dark" }) => {
           </div>
         </div>
       </div>
-      <a>
+      <a className={styles.contactBtn}>
         <button>
-          <FontAwesomeIcon className="fa-icon" icon={faEnvelope} /> Contact
+          <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
+          <span>Contact</span>
         </button>
       </a>
     </div>

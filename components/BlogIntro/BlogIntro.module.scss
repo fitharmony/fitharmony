@@ -1,11 +1,13 @@
 .blogIntroCtr {
   color: white;
+  margin-bottom: 2em;
+
   .blogIntroBg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 915px;
     background: linear-gradient(to top, #0c0138, #000000);
     z-index: -1;
   }
@@ -25,7 +27,11 @@
   img {
     width: 100%;
     height: 600px;
+    min-width: 100%;
+    min-height: 600px;
     object-fit: cover;
     border-radius: 0.65em;
+    background: grey;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.065), 0 10px 30px rgba(0, 0, 0, 0.065); // Subtle shadow
   }
 }

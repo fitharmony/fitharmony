@@ -7,7 +7,11 @@ import Link from "next/link";
 const BlogPost = ({ blogData }) => {
   return (
     <Link href={`/blogs/${blogData.title}/`} className={styles.blogPreview}>
-      <img className={styles.blogImg} src={blogData.imageUrl} />
+      <img
+        className={styles.blogImg}
+        src={blogData.imageUrl}
+        alt="bodybits-blog-preview-image"
+      />
       <div className={styles.blogPreviewContent}>
         <div className={styles.category}>{blogData.category}</div>
         <h3>{blogData.title}</h3>

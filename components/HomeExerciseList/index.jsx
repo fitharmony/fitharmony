@@ -29,7 +29,6 @@ const HomeExerciseList = () => {
 
   return (
     <div>
-      {/* <SectionSeparator title="Exercises" /> */}
       <div className={styles.homeExerciseList}>
         <div className={styles.options}>
           <div>

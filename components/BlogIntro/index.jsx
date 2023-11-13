@@ -8,7 +8,7 @@ const BlogIntro = ({ blogData }) => {
       <div className={styles.category}>{blogData.category}</div>
       <h1>{blogData.title}</h1>
       <p>{blogData.description}</p>
-      <img src={blogData.imageUrl} />
+      <img src={blogData.imageUrl} alt="bodybits-blog-image" />
     </div>
   );
 };

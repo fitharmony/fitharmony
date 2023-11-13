@@ -54,5 +54,42 @@
         color: white;
       }
     }
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  }
+}
+
+// MEDIA QUERIES
+@media (max-width: 1215px) {
+  .nav {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 950px) {
+  .nav {
+    a {
+      button {
+        span {
+          display: none;
+        }
+        svg {
+          margin: 0;
+        }
+        padding: 0.5em 0.75em;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .nav {
+    .titleOptions {
+      .options {
+        display: none;
+      }
+    }
+    .contactBtn {
+      display: none;
+    }
   }
 }

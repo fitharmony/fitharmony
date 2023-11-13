@@ -1,0 +1,46 @@
+.authorDateCtr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  position: relative;
+  .authorCtr {
+    span {
+      color: #57606a;
+    }
+    display: flex;
+    .authorImg {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 0.75em;
+      position: relative;
+      overflow: hidden;
+      background: #57606a;
+      opacity: 0.5;
+      .svg {
+        height: 40px;
+        width: 40px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .datePosted {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 2.5px;
+    width: 100%;
+    opacity: 0.65;
+    background: linear-gradient(to right, #2504a9, #4b20f6);
+  }
+}
