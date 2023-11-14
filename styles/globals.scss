@@ -88,3 +88,21 @@ input[type="text"] {
   }
   margin: 3em 0;
 }
+// Scrollbar styles
+::-webkit-scrollbar {
+  width: 10px; // Thinner width
+  height: 6.5px; // Needed for horizontal scrollbars
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; // Light background on the track
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06011b; // Darker color on the thumb
+  border-radius: 3px; // Rounded corners on the thumb
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; // Slightly darker color on hover
+}
