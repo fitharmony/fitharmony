@@ -28,7 +28,7 @@ function BlogPage() {
           rel="stylesheet"
         />
       </Head>
-      <Layout navTheme="white">
+      <Layout navTheme="white" showGradient={false}>
         {/* Intro */}
         <BlogIntro blogData={selectedBlog} />
         {/* Author, Date */}

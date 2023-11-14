@@ -8,18 +8,19 @@ const Layout = ({
   children,
   showNav = true,
   navTheme = "dark",
+  showGradient = true,
   style = {},
 }) => {
   return showNav ? (
     <main className={styles.layout} style={style}>
       <NavBar navTheme={navTheme} />
       <div className={styles.children}>{children}</div>
-      <FixedGradient />
+      {showGradient && <FixedGradient />}
     </main>
   ) : (
     <div className={`${styles.layout} ${styles.noNav}`} style={style}>
       <div className={styles.children}>{children}</div>
-      <FixedGradient />
+      {showGradient && <FixedGradient />}
     </div>
   );
 };
