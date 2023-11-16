@@ -2,11 +2,9 @@ import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 import Head from "next/head";
 import data from "../../public/blogs.json";
-import Link from "next/link";
 import Footer from "../../components/Footer";
-import BlogIntro from "../../components/BlogIntro";
+import PageIntro from "../../components/BlogIntro";
 import AuthorDateCtr from "../../components/AuthorDateCtr";
-import BlogList from "../../components/BlogList";
 
 function BlogPage() {
   const router = useRouter();
@@ -30,7 +28,12 @@ function BlogPage() {
       </Head>
       <Layout navTheme="white" showGradient={false}>
         {/* Intro */}
-        <BlogIntro blogData={selectedBlog} />
+        <PageIntro
+          title={selectedBlog.title}
+          category={selectedBlog.category}
+          description={selectedBlog.description}
+          imageUrl={selectedBlog.imageUrl}
+        />
         {/* Author, Date */}
         <AuthorDateCtr />
         {/* Blog Content */}

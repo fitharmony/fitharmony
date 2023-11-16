@@ -1,13 +1,19 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullseye } from "@fortawesome/free-solid-svg-icons";
 import styles from "./TextChip.module.scss";
+import { hexToRGBA } from "../../helpers";
 
 const TextChip = ({ title = "text", color = "#A9A5A8" }) => {
+  const backgroundColor = hexToRGBA(color, 0.15); // Convert hex color to RGBA with 25% opacity
+
   return (
-    <div className={styles.textChip}>
-      {" "}
-      <FontAwesomeIcon icon={faBullseye} className={styles.svg} />
+    <div
+      style={{
+        color: color,
+        border: `1px solid ${color}`,
+        backgroundColor: backgroundColor,
+      }}
+      className={styles.textChip}
+    >
       {title}
     </div>
   );

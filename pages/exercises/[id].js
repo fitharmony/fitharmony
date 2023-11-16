@@ -6,6 +6,8 @@ import ExerciseCard from "../../components/ExerciseCard";
 import TextChip from "../../components/TextChip";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import PageIntro from "../../components/BlogIntro";
+import { bodyPartColors } from "../../helpers";
 
 function ExercisePage() {
   const router = useRouter();
@@ -31,18 +33,32 @@ function ExercisePage() {
           rel="stylesheet"
         />
       </Head>
-      <Layout>
-        <ExerciseCard selectedExercise={selectedExercise} />
+      <Layout navTheme="white" showGradient={false}>
+        <PageIntro
+          title={selectedExercise.name}
+          category="Exercise Details"
+          description={
+            <TextChip
+              title={selectedExercise.bodyPart || "Body Part"}
+              color={bodyPartColors[selectedExercise.bodyPart]}
+            />
+          }
+          imageUrl="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        {/* <ExerciseCards selectedExercise={selectedExercise} /> */}
         {exercisesWithThisBodypart.length > 1 && (
           <div className="container">
-            <h3>OTHER EXERCISES TARGETTING {selectedExercise.bodyPart}</h3>
+            <h3>OTHER EXERCISES TARGETTING {selectedExercise.target}</h3>
             <div className="exercise-list">
               {exercisesWithThisBodypart.map((exercise) => (
                 <div className="exercise-liketype" key={exercise.id}>
                   <Link href={`/exercises/${exercise.id}/`}>
                     {exercise.name}
                   </Link>
-                  <TextChip title={exercise.target || "Target"} />
+                  <TextChip
+                    title={exercise.bodyPart || "Target"}
+                    color={bodyPartColors[exercise.bodyPart]}
+                  />
                 </div>
               ))}
             </div>
