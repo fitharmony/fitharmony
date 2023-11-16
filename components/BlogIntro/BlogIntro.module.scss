@@ -11,6 +11,11 @@
     background: linear-gradient(to top, #06011b, #000000);
     z-index: -1;
   }
+  &.exercise {
+    .blogIntroBg {
+      background: linear-gradient(to top, #0f0f0f, #000000);
+    }
+  }
   h1 {
     font-size: 2.75em;
   }

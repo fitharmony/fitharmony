@@ -35,15 +35,20 @@ function ExercisePage() {
       </Head>
       <Layout navTheme="white" showGradient={false}>
         <PageIntro
-          title={selectedExercise.name}
+          title={selectedExercise.name.toLocaleUpperCase()}
           category="Exercise Details"
           description={
-            <TextChip
-              title={selectedExercise.bodyPart || "Body Part"}
-              color={bodyPartColors[selectedExercise.bodyPart]}
-            />
+            <div style={{ display: "flex" }}>
+              <TextChip
+                title={selectedExercise.bodyPart || "Body Part"}
+                color={bodyPartColors[selectedExercise.bodyPart]}
+                style={{ marginLeft: "0" }}
+              />
+              <TextChip title={selectedExercise.equipment || "Body Part"} />
+            </div>
           }
           imageUrl="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          variant="exercise"
         />
         {/* <ExerciseCards selectedExercise={selectedExercise} /> */}
         {exercisesWithThisBodypart.length > 1 && (
