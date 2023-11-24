@@ -51,20 +51,29 @@ button {
   }
 }
 
-.exercise-liketype {
-  display: flex;
-  align-items: center;
-  margin: 0.35em 0;
-  a {
-    font-weight: 500;
-    text-transform: capitalize;
-    &:hover {
-      background: linear-gradient(to left, #170075, #0051ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+.exercise-liketype-ctr {
+  border-bottom: 1px solid #dfe5ec;
+  padding-bottom: 0.55em;
+  margin: 0.35em 0 0.85em 0;
+  .exercise-liketype {
+    display: flex;
+    align-items: center;
+    a {
+      font-weight: 500;
+      text-transform: capitalize;
+      &:hover {
+        background: linear-gradient(to left, #170075, #0051ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
+  .fa-icon {
+    width: 1em;
+    height: 1em;
+  }
 }
+
 .dropdownLabel {
   display: block;
   font-size: 0.85em;
