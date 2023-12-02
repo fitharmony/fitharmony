@@ -91,6 +91,11 @@ input[type="text"] {
   width: 15em;
 }
 
+.disabled {
+  opacity: 0.25;
+  pointer-events: none !important;
+}
+
 .blog-content {
   p {
     font-size: 1.075em;

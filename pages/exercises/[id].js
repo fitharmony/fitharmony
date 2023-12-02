@@ -3,12 +3,10 @@ import Layout from "../../components/Layout";
 import Head from "next/head";
 import data from "../../public/wed.json";
 import TextChip from "../../components/TextChip";
-import Link from "next/link";
 import Footer from "../../components/Footer";
 import PageIntro from "../../components/BlogIntro";
 import { bodyPartColors } from "../../helpers";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import ExerciseList from "../../components/ExerciseList";
 
 function ExercisePage() {
   const router = useRouter();
@@ -17,10 +15,6 @@ function ExercisePage() {
   // Fetch the specific exercise data using the exerciseName, or display it as needed.
   const selectedExercise =
     data.exercises.find((exercise) => exercise.id === id) || data.exercises[0];
-
-  const exercisesWithThisBodypart = data.exercises.filter(
-    (exercise) => exercise.bodyPart === selectedExercise.bodyPart
-  );
 
   return (
     <main>
@@ -105,53 +99,21 @@ function ExercisePage() {
           </p>
         </div>
         {/* <ExerciseCards selectedExercise={selectedExercise} /> */}
-        {exercisesWithThisBodypart.length > 1 && (
-          <div className="container">
-            <h3 style={{ marginBottom: "1em" }}>
-              [OTHER EXERCISES TARGETTING {selectedExercise.target}]
-            </h3>
-            <div
-              className="exercise-card-container"
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <div className="exercise-list" style={{ width: "100%" }}>
-                {exercisesWithThisBodypart.map((exercise) => (
-                  <div
-                    className="exercise-liketype-ctr"
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      width: "100%",
-                    }}
-                  >
-                    <div className="exercise-liketype" key={exercise.id}>
-                      <Link href={`/exercises/${exercise.id}/`}>
-                        {exercise.name}
-                      </Link>
-                      <TextChip
-                        title={exercise.bodyPart || "Target"}
-                        color={bodyPartColors[exercise.bodyPart]}
-                      />
-                      <TextChip
-                        title={exercise.equipment || "Target"}
-                        style={{ marginLeft: "0" }}
-                      />
-                    </div>
-                    <FontAwesomeIcon
-                      icon={faExternalLink}
-                      className="fa-icon"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
+        <div className="container">
+          <h3 style={{ marginBottom: "1em" }}>
+            [OTHER EXERCISES TARGETTING {selectedExercise.target.toUpperCase()}]
+          </h3>
+          <div
+            className="exercise-card-container"
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <ExerciseList data={data} selectedExercise={selectedExercise} />
           </div>
-        )}
+        </div>
       </Layout>
       <Footer />
     </main>
