@@ -3,6 +3,7 @@ import styles from "./NavBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import MobileNavBar from "./MobileNavBar";
 
 const NavBar = ({ navTheme = "dark" }) => {
   return (
@@ -29,6 +30,8 @@ const NavBar = ({ navTheme = "dark" }) => {
           <span>Contact</span>
         </button>
       </a>
+      {/* Mobile Ctr */}
+      <MobileNavBar />
     </div>
   );
 };

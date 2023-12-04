@@ -1,0 +1,70 @@
+.mobileNavCtr {
+  display: none;
+  padding: 1em 0 1em 1em;
+  .mobileNavOptionsCtr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    .mobileNavTitle {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      background: linear-gradient(to right, #2504a9, #4b20f6);
+      padding: 0.75em;
+    }
+    .mobileNavContent {
+      padding: 1em 1.5em 1.5em 1.5em;
+      .mobileNavLinks {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-style: italic;
+          font-size: 1.35em;
+          padding: 1em 0;
+          border-bottom: 2px solid #dfe5ec82;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+      .contactCtr {
+        padding: 1em 0;
+        font-weight: 500;
+        color: #505050;
+        svg {
+          font-size: 2em;
+          margin-top: 0.35em;
+          color: black;
+        }
+      }
+    }
+  }
+  .navTitle {
+    display: flex;
+    align-items: center;
+    img {
+      height: 75px;
+      width: 75px;
+    }
+    h2 {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .mobileNavCtr {
+    display: block;
+  }
+  .mobileNavTitle {
+    padding-right: 1.5em !important;
+    svg {
+      font-size: 1.25em;
+      color: white;
+    }
+  }
+}
