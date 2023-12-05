@@ -94,7 +94,6 @@ function BlogPage() {
           <h3 style={{ marginBottom: "1em" }}>[VIEW SIMILAR BLOGS]</h3>
           <BlogList variant="full" />
         </div>
-        x{" "}
       </Layout>
       <Footer />
     </main>

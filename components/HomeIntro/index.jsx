@@ -6,11 +6,12 @@ const HomeIntro = () => {
   return (
     <div className={styles.homeIntro}>
       {" "}
-      <h1>Exercises Uncovered. Fitness Mastered.</h1>
+      <h1>Fitness Insights & Your Wellness Journey</h1>
       <p>
-        Discover a curated library of exercises for every body part. Find
-        detailed descriptions, master your technique, and embark on your fitness
-        journey with BodyBits.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor
+        fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta
+        eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla
+        tincidunt nec.
       </p>
       <Link href="/blogs">
         <button>Explore the Fitness Blog</button>
