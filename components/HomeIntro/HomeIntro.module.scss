@@ -9,6 +9,8 @@
   justify-content: center;
   h1 {
     font-size: $font-size-h1;
+    line-height: 100%;
+    margin-bottom: 0.35em;
   }
   p {
     width: 75%;
@@ -20,5 +22,11 @@
     margin-top: 1em;
     background: #3a1fa5;
     background: linear-gradient(135deg, #3a1fa5, #37a5ff);
+  }
+}
+
+@media (max-width: 850px) {
+  .homeIntro {
+    padding-top: 0;
   }
 }

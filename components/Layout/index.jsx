@@ -10,11 +10,14 @@ const Layout = ({
   navTheme = "dark",
   showGradient = true,
   style = {},
+  childrenStyle = {},
 }) => {
   return showNav ? (
     <main className={styles.layout} style={style}>
       <NavBar navTheme={navTheme} />
-      <div className={styles.children}>{children}</div>
+      <div className={styles.children} style={childrenStyle}>
+        {children}
+      </div>
       {showGradient && <FixedGradient />}
     </main>
   ) : (

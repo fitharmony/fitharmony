@@ -85,3 +85,12 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .homeExerciseList {
+    td {
+      background: red;
+      min-width: 500px;
+    }
+  }
+}

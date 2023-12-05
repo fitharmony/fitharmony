@@ -16,11 +16,11 @@ const NavBar = ({ navTheme = "dark" }) => {
           </div>
         </Link>
         <div className={styles.options}>
-          <a>Fitness Blog</a>
-          <a>Exercises</a>
+          <Link href="/blogs">Fitness Blog</Link>
+          <a className="disabled">Exercises</a>
           <div className={`${styles.featuredCtr} disabled`}>
             <a>Featured Products</a>
-            <div className={styles.featured}>🔥HOT</div>
+            <div className="featured">🔥HOT</div>
           </div>
         </div>
       </div>

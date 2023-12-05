@@ -16,6 +16,14 @@
       background: linear-gradient(to top, #0f0f0f, #000000);
     }
   }
+  &.blogs {
+    margin-bottom: 10em;
+    color: white;
+    .blogIntroBg {
+      height: 400px;
+      background: linear-gradient(to bottom, #100051, #080029);
+    }
+  }
   h1 {
     font-size: 2.75em;
   }

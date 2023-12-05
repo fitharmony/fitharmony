@@ -5,11 +5,13 @@ import data from "../../public/blogs.json";
 import Footer from "../../components/Footer";
 import PageIntro from "../../components/BlogIntro";
 import AuthorDateCtr from "../../components/AuthorDateCtr";
+import BlogList from "../../components/BlogList";
 
 function BlogPage() {
   const router = useRouter();
   const { title } = router.query;
 
+  console.log(title);
   // Fetch the specific blog data
   const selectedBlog =
     data.blogList.find((blog) => blog.title === title) || data.blogList[0];
@@ -88,7 +90,11 @@ function BlogPage() {
           </p>
         </div>
         {/* More Blogs */}
-        {/* <BlogList /> */}
+        <div className="container">
+          <h3 style={{ marginBottom: "1em" }}>[VIEW SIMILAR BLOGS]</h3>
+          <BlogList variant="full" />
+        </div>
+        x{" "}
       </Layout>
       <Footer />
     </main>

@@ -4,19 +4,21 @@ import Layout from "../Layout";
 import BlogPost from "./BlogPreview";
 import blogList from "../../public/blogs.json";
 
-const BlogList = () => {
+const BlogList = ({ variant }) => {
   return (
-    <div className={styles.blogCtr}>
+    <div className={`${styles.blogCtr}`}>
       <Layout showNav={false}>
         {/* <SectionSeparator title="BLOGS" /> */}
         <div className={styles.blogList}>
-          {/* TODO: Add from files. Add see all button (need all blogs page) */}
-          <BlogPost blogData={blogList.blogList[0]} />
-          <BlogPost blogData={blogList.blogList[0]} />
-          <BlogPost blogData={blogList.blogList[0]} />
-          <BlogPost blogData={blogList.blogList[0]} />
-          <BlogPost blogData={blogList.blogList[0]} />
-          <BlogPost blogData={blogList.blogList[0]} />
+          {/* Iterate over bloglist */}
+          {blogList.blogList.map((blogData) => (
+            <BlogPost
+              blogData={blogData}
+              variant={variant}
+              key={blogData.title}
+              isTrending={blogData.trending || false}
+            />
+          ))}
         </div>
       </Layout>
     </div>

@@ -1,6 +1,9 @@
 .blogPreview {
-  width: 550px;
+  width: 585px;
   margin-bottom: 1em;
+  &.full {
+    width: 585px;
+  }
   .blogImg {
     height: 400px;
     width: 100%;
@@ -21,6 +24,8 @@
       background: linear-gradient(to left, #170075, #0051ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
     }
     h3 {
       margin: 0.25em 0;
@@ -82,5 +87,11 @@
         -webkit-text-fill-color: transparent;
       }
     }
+  }
+}
+
+@media (max-width: 1142px) {
+  .blogPreview {
+    width: 100%;
   }
 }

@@ -92,9 +92,28 @@ input[type="text"] {
   width: 15em;
 }
 
+.dark-variant {
+  background: #06011b; // Darker color on the thumb
+  color: white;
+  svg {
+    margin-left: 10px;
+  }
+}
+
 .disabled {
   opacity: 0.25;
   pointer-events: none !important;
+}
+
+.featured {
+  background: rgba(255, 0, 0, 0.4);
+  padding: 1.5px 5.5px;
+  border-radius: 0.15em;
+  border: 1px solid rgb(255, 5, 5);
+  font-size: 0.65em;
+  color: white;
+  font-weight: 600;
+  margin-left: -1.5em;
 }
 
 .blog-content {

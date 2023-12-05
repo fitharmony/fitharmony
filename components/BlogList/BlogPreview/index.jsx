@@ -4,16 +4,33 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./BlogPreview.module.scss";
 import Link from "next/link";
 
-const BlogPost = ({ blogData }) => {
+const BlogPost = ({ blogData, variant, isTrending }) => {
   return (
-    <Link href={`/blogs/${blogData.title}/`} className={styles.blogPreview}>
+    <Link
+      href={`/blog/${blogData.title}/`}
+      className={`${styles.blogPreview} ${styles[variant]}`}
+    >
       <img
         className={styles.blogImg}
         src={blogData.imageUrl}
         alt="bodybits-blog-preview-image"
       />
       <div className={styles.blogPreviewContent}>
-        <div className={styles.category}>{blogData.category}</div>
+        <div className={styles.category}>
+          {blogData.category}
+          {isTrending && (
+            <div
+              className="featured"
+              style={{
+                marginLeft: ".75em",
+                maxHeight: "20px",
+                lineHeight: "18.5px",
+              }}
+            >
+              🔥TRENDING
+            </div>
+          )}
+        </div>
         <h3>{blogData.title}</h3>
         <p>{blogData.description}</p>
         <div className={styles.authDpCtr}>

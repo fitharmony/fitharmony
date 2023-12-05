@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HomeIntro.module.scss";
+import Link from "next/link";
 
 const HomeIntro = () => {
   return (
@@ -11,7 +12,9 @@ const HomeIntro = () => {
         detailed descriptions, master your technique, and embark on your fitness
         journey with BodyBits.
       </p>
-      <button>Explore the Fitness Blog</button>
+      <Link href="/blogs">
+        <button>Explore the Fitness Blog</button>
+      </Link>
     </div>
   );
 };

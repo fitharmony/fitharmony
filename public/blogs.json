@@ -1,12 +1,53 @@
 {
   "blogList": [
     {
-      "title": "BodyBits Test Blog Post",
+      "title": "BodyBits Test Blog Post 1",
       "category": "Fitness",
-      "author": "Danny Dimes",
+      "author": "BodyBits Author",
       "date-posted": "November 12, 2023",
-      "description": "Gain expertise and insights from top organizations through guided tutorials, boosting productivity, enhancing security, and enabling seamless collaboration. Some other nonsense here. More nonsense here.",
-      "imageUrl": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus. Curabitur sed posuere ante.",
+      "imageUrl": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg",
+      "trending": true
+    },
+    {
+      "title": "BodyBits Test Blog Post 2",
+      "category": "Fitness",
+      "author": "BodyBits Author",
+      "date-posted": "November 12, 2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus. Curabitur sed posuere ante.",
+      "imageUrl": "https://images.pexels.com/photos/2827392/pexels-photo-2827392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "BodyBits Test Blog Post 3",
+      "category": "Fitness",
+      "author": "BodyBits Author",
+      "date-posted": "November 12, 2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus. Curabitur sed posuere ante.",
+      "imageUrl": "https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "BodyBits Test Blog Post 4",
+      "category": "Fitness",
+      "author": "BodyBits Author",
+      "date-posted": "November 12, 2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus. Curabitur sed posuere ante.",
+      "imageUrl": "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "BodyBits Test Blog Post 5",
+      "category": "Fitness",
+      "author": "BodyBits Author",
+      "date-posted": "November 12, 2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus. Curabitur sed posuere ante.",
+      "imageUrl": "https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "BodyBits Test Blog Post 6",
+      "category": "Fitness",
+      "author": "BodyBits Author",
+      "date-posted": "November 12, 2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus. Curabitur sed posuere ante.",
+      "imageUrl": "https://images.pexels.com/photos/703016/pexels-photo-703016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s"
     }
   ]
 }
