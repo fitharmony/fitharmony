@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./MobileNavBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faFacebookSquare,
