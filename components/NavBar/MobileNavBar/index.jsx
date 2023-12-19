@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 
 // Mobile Navbar Container (icon and options)
-const MobileNavBar = () => {
+const MobileNavBar = ({ navTheme }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
@@ -20,6 +20,7 @@ const MobileNavBar = () => {
           className="fa-icon"
           icon={faBars}
           onClick={() => setShowMobileNav(true)}
+          style={{ color: navTheme === "dark" ? "black" : "white" }}
         />
       </div>
       {showMobileNav && (

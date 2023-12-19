@@ -12,7 +12,12 @@ function shuffleArray(array) {
   return array;
 }
 
-const BlogList = ({ variant, shuffleBlogs = false, filterBlogs = null }) => {
+const BlogList = ({
+  variant,
+  shuffleBlogs = false,
+  filterBlogs = null,
+  count = blogList.blogList.length,
+}) => {
   let blogsToIterate = [...blogList.blogList];
 
   // Shuffle the blogs if shuffleBlogs is true
@@ -26,6 +31,9 @@ const BlogList = ({ variant, shuffleBlogs = false, filterBlogs = null }) => {
       (blog) => blog.title !== filterBlogs
     );
   }
+
+  // Limit the number of blogs based on the count prop
+  blogsToIterate = blogsToIterate.slice(0, count);
 
   return (
     <div className={`${styles.blogCtr}`}>

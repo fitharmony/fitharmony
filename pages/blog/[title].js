@@ -95,7 +95,12 @@ function BlogPage() {
         {/* More Blogs */}
         <div className="container">
           <h3 style={{ marginBottom: "1em" }}>[VIEW SIMILAR BLOGS]</h3>
-          <BlogList variant="full" filterBlogs={selectedBlog.title} />
+          <BlogList
+            variant="full"
+            filterBlogs={selectedBlog.title}
+            shuffleBlogs={true}
+            count={4}
+          />
         </div>
       </Layout>
       <Footer />

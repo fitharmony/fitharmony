@@ -31,7 +31,7 @@ const NavBar = ({ navTheme = "dark" }) => {
         </button>
       </a>
       {/* Mobile Ctr */}
-      <MobileNavBar />
+      <MobileNavBar navTheme={navTheme} />
     </div>
   );
 };
