@@ -33,7 +33,7 @@ function BlogPage() {
           <FontAwesomeIcon icon={faDice} className="fa-icon" />
         </button>
         {/* </Link>s */}
-        <BlogList variant="full" />
+        <BlogList variant="full" shuffleBlogs />
       </Layout>
       <Footer />
     </main>

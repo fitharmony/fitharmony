@@ -21,7 +21,7 @@ export default function Home() {
 
       <Layout>
         <HomeIntro />
-        <HomeExerciseList />
+        {/* <HomeExerciseList /> */}
       </Layout>
 
       <BlogList />

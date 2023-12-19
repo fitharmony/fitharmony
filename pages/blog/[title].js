@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import PageIntro from "../../components/BlogIntro";
 import AuthorDateCtr from "../../components/AuthorDateCtr";
 import BlogList from "../../components/BlogList";
+import Disclaimer from "../../components/Disclaimer";
 
 function BlogPage() {
   const router = useRouter();
@@ -38,6 +39,8 @@ function BlogPage() {
         />
         {/* Author, Date */}
         <AuthorDateCtr />
+        {/* Disclaimer */}
+        <Disclaimer />
         {/* Blog Content */}
         <div className="blog-content">
           <p>
@@ -92,7 +95,7 @@ function BlogPage() {
         {/* More Blogs */}
         <div className="container">
           <h3 style={{ marginBottom: "1em" }}>[VIEW SIMILAR BLOGS]</h3>
-          <BlogList variant="full" />
+          <BlogList variant="full" filterBlogs={selectedBlog.title} />
         </div>
       </Layout>
       <Footer />
