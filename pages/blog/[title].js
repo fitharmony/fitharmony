@@ -7,14 +7,26 @@ import PageIntro from "../../components/BlogIntro";
 import AuthorDateCtr from "../../components/AuthorDateCtr";
 import BlogList from "../../components/BlogList";
 import Disclaimer from "../../components/Disclaimer";
+import { useEffect, useState } from "react";
 
 function BlogPage() {
   const router = useRouter();
-  const { title } = router.query;
 
-  // Fetch the specific blog data
-  const selectedBlog =
-    data.blogList.find((blog) => blog.title === title) || data.blogList[0];
+  const [selectedBlog, setSelectedBlog] = useState(null);
+
+  useEffect(() => {
+    if (!router.isReady) return;
+
+    const title = router.query.title;
+    const blog =
+      data.blogList.find((blog) => blog.title === title) || data.blogList[0];
+    setSelectedBlog(blog);
+  }, [router.isReady, router.query.title]);
+
+  // Render a loading state or placeholder if selectedBlog is not yet available
+  if (!selectedBlog) {
+    return <div>Loading...</div>; // Or any other placeholder content
+  }
 
   return (
     <main>
