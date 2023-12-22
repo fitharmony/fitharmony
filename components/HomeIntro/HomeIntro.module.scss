@@ -38,3 +38,11 @@
     padding-top: 0;
   }
 }
+
+@media (max-width: 640px) {
+  .homeIntro {
+    h1 {
+      font-size: $responsive-size-h1;
+    }
+  }
+}

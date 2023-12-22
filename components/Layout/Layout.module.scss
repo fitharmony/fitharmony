@@ -5,6 +5,12 @@
   .children {
     padding: 4em 0;
   }
+  &.full {
+    padding-bottom: 0;
+    .children {
+      padding-bottom: 0;
+    }
+  }
   // NoNav variant
   &.noNav {
     width: 100%;
