@@ -12,7 +12,6 @@ function BlogPage() {
   const router = useRouter();
   const { title } = router.query;
 
-  console.log(title);
   // Fetch the specific blog data
   const selectedBlog =
     data.blogList.find((blog) => blog.title === title) || data.blogList[0];

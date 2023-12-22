@@ -25,6 +25,14 @@
   }
 }
 
+@media (max-width: 1235px) {
+  .homeIntro {
+    p {
+      width: 95%;
+    }
+  }
+}
+
 @media (max-width: 850px) {
   .homeIntro {
     padding-top: 0;

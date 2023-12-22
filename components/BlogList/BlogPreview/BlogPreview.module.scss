@@ -90,8 +90,11 @@
   }
 }
 
-@media (max-width: 1142px) {
+@media (max-width: 1235px) {
   .blogPreview {
     width: 100%;
+    &.full {
+      width: 100%;
+    }
   }
 }

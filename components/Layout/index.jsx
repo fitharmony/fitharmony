@@ -8,12 +8,13 @@ const Layout = ({
   children,
   showNav = true,
   navTheme = "dark",
+  variant = "",
   showGradient = true,
   style = {},
   childrenStyle = {},
 }) => {
   return showNav ? (
-    <main className={styles.layout} style={style}>
+    <main className={`${styles.layout} ${styles[variant]}`} style={style}>
       <NavBar navTheme={navTheme} />
       <div className={styles.children} style={childrenStyle}>
         {children}
@@ -21,7 +22,10 @@ const Layout = ({
       {showGradient && <FixedGradient />}
     </main>
   ) : (
-    <div className={`${styles.layout} ${styles.noNav}`} style={style}>
+    <div
+      className={`${styles.layout} ${styles.noNav} ${styles[variant]}`}
+      style={style}
+    >
       <div className={styles.children}>{children}</div>
       {showGradient && <FixedGradient />}
     </div>

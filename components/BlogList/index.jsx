@@ -37,7 +37,7 @@ const BlogList = ({
 
   return (
     <div className={`${styles.blogCtr}`}>
-      <Layout showNav={false}>
+      <Layout showNav={false} variant={variant}>
         {/* <SectionSeparator title="BLOGS" /> */}
         <div className={styles.blogList}>
           {/* Iterate over bloglist */}

@@ -14,6 +14,15 @@
   }
 }
 
+@media (max-width: 1235px) {
+  .layout {
+    max-width: 93.5%;
+    &.full {
+      max-width: 100%;
+    }
+  }
+}
+
 @media (max-width: 850px) {
   .layout {
     padding-top: 0;
