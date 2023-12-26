@@ -54,3 +54,16 @@
     filter: blur(200px);
   }
 }
+
+@media (max-width: 640px) {
+  .bbFooter {
+    .bbFooter__container {
+      flex-direction: column;
+    }
+    .bbFooter__container__right {
+      .bbFooter__container__right__social {
+        margin-left: 1em;
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .blogIntroCtr {
   color: white;
   margin-bottom: 2em;
@@ -47,5 +49,13 @@
     border-radius: 0.65em;
     background: grey;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.065), 0 10px 30px rgba(0, 0, 0, 0.065); // Subtle shadow
+  }
+}
+
+@media (max-width: 640px) {
+  .blogIntroCtr {
+    h1 {
+      font-size: $responsive-size-h1;
+    }
   }
 }

@@ -44,7 +44,7 @@ const MobileNavBar = ({ navTheme }) => {
               <div className={styles.mobileNavLinks}>
                 <a>Fitness Blog</a>
                 <a>Exercises</a>
-                <a>Featured Products</a>
+                <a className="disabled">Featured Products</a>
               </div>
               <div className={styles.contactCtr}>
                 <p>Connect With Us</p>

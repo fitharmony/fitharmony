@@ -140,3 +140,9 @@ input[type="text"] {
 ::-webkit-scrollbar-thumb:hover {
   background: #000000; // Slightly darker color on hover
 }
+
+@media (max-width: 640px) {
+  .blog-content {
+    margin: 2em 0;
+  }
+}

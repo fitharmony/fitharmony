@@ -20,7 +20,7 @@ const NavBar = ({ navTheme = "dark" }) => {
           {/* <a className="disabled">Exercises</a> */}
           <div className={`${styles.featuredCtr} disabled`}>
             <a>Featured Products</a>
-            <div className="featured">🔥HOT</div>
+            <div className="featured">🔥COMING SOON</div>
           </div>
         </div>
       </div>
