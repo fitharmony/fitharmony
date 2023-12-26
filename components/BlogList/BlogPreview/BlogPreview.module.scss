@@ -98,3 +98,12 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .blogPreview {
+    .blogImg {
+      height: 265px;
+      min-height: 265px;
+    }
+  }
+}

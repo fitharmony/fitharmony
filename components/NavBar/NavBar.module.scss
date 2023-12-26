@@ -83,3 +83,19 @@
     }
   }
 }
+@media (max-width: 640px) {
+  .nav {
+    .titleOptions {
+      .navTitle {
+        img {
+          height: 61.5px;
+          width: 61.5px;
+        }
+        margin-right: 0;
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
