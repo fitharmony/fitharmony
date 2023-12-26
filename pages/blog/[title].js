@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 
 function BlogPage() {
   const router = useRouter();
-
   const [selectedBlog, setSelectedBlog] = useState(null);
 
   useEffect(() => {
@@ -23,7 +22,6 @@ function BlogPage() {
     setSelectedBlog(blog);
   }, [router.isReady, router.query.title]);
 
-  // Render a loading state or placeholder if selectedBlog is not yet available
   if (!selectedBlog) {
     return <div>Loading...</div>; // Or any other placeholder content
   }
@@ -41,78 +39,68 @@ function BlogPage() {
         />
       </Head>
       <Layout navTheme="white" showGradient={false}>
-        {/* Intro */}
-        <PageIntro
-          title={selectedBlog.title}
-          category={selectedBlog.category}
-          description={selectedBlog.description}
-          imageUrl={selectedBlog.imageUrl}
-        />
-        {/* Author, Date */}
-        <AuthorDateCtr />
-        {/* Disclaimer */}
-        <Disclaimer />
-        {/* Blog Content */}
-        <div className="blog-content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu
-            dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque
-            ligula, non placerat nulla tincidunt nec. Mauris erat risus,
-            condimentum id diam sit amet, vulputate bibendum velit. Donec
-            molestie suscipit faucibus. Curabitur sed posuere ante. Nulla
-            ultrices cursus eleifend. In sodales varius ipsum, sit amet ultrices
-            felis laoreet varius. Nulla in blandit lectus. Aenean accumsan orci
-            ligula, non convallis lacus cursus at. Nunc ipsum quam, ultricies
-            scelerisque leo nec, sodales convallis ipsum. Sed id congue nibh, at
-            mattis sapien.
-          </p>
-          <br></br>
-          <p>
-            Aliquam et quam convallis, commodo nibh eu, laoreet dui. Sed ac leo
-            nec nisl tristique viverra. Maecenas sit amet ullamcorper diam, at
-            aliquet ligula. Quisque eget augue ut turpis maximus vestibulum non
-            et sapien. Sed dignissim sollicitudin mauris, a condimentum nisi
-            suscipit eget. Pellentesque tellus libero, bibendum in pharetra
-            vitae, congue quis ipsum. Aenean luctus turpis eu sapien iaculis,
-            vel commodo sem sollicitudin. Sed eu rhoncus ex, in dapibus lectus.
-          </p>
-          <br></br>
-          <p>
-            In commodo lectus molestie massa aliquam vulputate. Pellentesque nec
-            cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc. Fusce
-            sollicitudin ipsum sem, et dignissim tortor euismod id. In hac
-            habitasse platea dictumst. Quisque ornare mi a justo pretium, in
-            pretium metus cursus. Curabitur rutrum enim sit amet mi egestas, id
-            efficitur ante cursus. Ut dignissim maximus tortor, in elementum
-            lacus condimentum id. Integer vestibulum ornare massa, at venenatis
-            ligula fermentum id. Integer a luctus enim.
-          </p>
-          <br></br>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu
-            dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque
-            ligula, non placerat nulla tincidunt nec. Mauris erat risus,
-            condimentum id diam sit amet, vulputate bibendum velit. Donec
-            molestie suscipit faucibus. Curabitur sed posuere ante. Nulla
-            ultrices cursus eleifend. In sodales varius ipsum, sit amet ultrices
-            felis laoreet varius. Nulla in blandit lectus. Aenean accumsan orci
-            ligula, non convallis lacus cursus at. Nunc ipsum quam, ultricies
-            scelerisque leo nec, sodales convallis ipsum. Sed id congue nibh, at
-            mattis sapien.
-          </p>
-        </div>
-        {/* More Blogs */}
-        <div className="container">
-          <h3 style={{ marginBottom: "1em" }}>[VIEW SIMILAR BLOGS]</h3>
-          <BlogList
-            variant="full"
-            filterBlogs={selectedBlog.title}
-            shuffleBlogs={true}
-            count={4}
+        <article>
+          <PageIntro
+            title={selectedBlog.title}
+            category={selectedBlog.category}
+            description={selectedBlog.description}
+            imageUrl={selectedBlog.imageUrl}
           />
-        </div>
+          <AuthorDateCtr />
+          <Disclaimer />
+
+          <section className="blog-content">
+            <p>
+              In commodo lectus molestie massa aliquam vulputate. Pellentesque
+              nec cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.
+              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
+              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
+              in pretium metus cursus. Curabitur rutrum enim sit amet mi
+              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
+              elementum lacus condimentum id. Integer vestibulum ornare massa,
+              at venenatis ligula fermentum id. Integer a luctus enim. In
+              commodo lectus molestie massa aliquam vulputate. Pellentesque nec
+              cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.{" "}
+              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
+              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
+              in pretium metus cursus. Curabitur rutrum enim sit amet mi
+              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
+              elementum lacus condimentum id. Integer vestibulum ornare massa,
+              at venenatis ligula fermentum id. Integer a luctus enim.
+            </p>
+            <br></br>
+            <p>
+              In commodo lectus molestie massa aliquam vulputate. Pellentesque
+              nec cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.
+              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
+              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
+              in pretium metus cursus. Curabitur rutrum enim sit amet mi
+              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
+              elementum lacus condimentum id. Integer vestibulum ornare massa,
+              at venenatis ligula fermentum id. Integer a luctus enim. In
+              commodo lectus molestie massa aliquam vulputate. Pellentesque nec
+              cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.{" "}
+              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
+              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
+              in pretium metus cursus. Curabitur rutrum enim sit amet mi
+              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
+              elementum lacus condimentum id. Integer vestibulum ornare massa,
+              at venenatis ligula fermentum id. Integer a luctus enim.
+            </p>
+          </section>
+
+          <aside>
+            <div className="container">
+              <h3>[VIEW SIMILAR BLOGS]</h3>
+              <BlogList
+                variant="full"
+                filterBlogs={selectedBlog.title}
+                shuffleBlogs={true}
+                count={4}
+              />
+            </div>
+          </aside>
+        </article>
       </Layout>
       <Footer />
     </main>

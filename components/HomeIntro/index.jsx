@@ -4,19 +4,17 @@ import Link from "next/link";
 
 const HomeIntro = () => {
   return (
-    <div className={styles.homeIntro}>
-      {" "}
+    <header className={styles.homeIntro}>
       <h1>Fitness Insights & Your Wellness Journey</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor
-        fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta
-        eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla
-        tincidunt nec.
+        Discover the latest in fitness and wellness. Join us on a journey
+        towards a healthier, more balanced lifestyle with expert insights, tips,
+        and inspiring stories.
       </p>
-      <Link href="/blogs">
+      <Link href="/blogs" aria-label="Explore the Fitness Blog">
         <button>Explore the Fitness Blog</button>
       </Link>
-    </div>
+    </header>
   );
 };
 
