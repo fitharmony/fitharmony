@@ -38,9 +38,9 @@ const BlogPost = ({ blogData, variant, isTrending }) => {
             <div className={styles.authorImg}>
               <FontAwesomeIcon icon={faUser} className={styles.svg} />
             </div>
-            {blogData.author}
+            <span>{blogData.author}</span>
           </div>
-          <div className={styles.datePosted}>{blogData["date-posted"]}</div>
+          <time className={styles.datePosted}>{blogData["date-posted"]}</time>
         </div>
       </div>
     </Link>

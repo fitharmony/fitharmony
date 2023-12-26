@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className={styles.bbFooter}>
+    <footer className={styles.bbFooter}>
       <div className={styles.bbFooter__container}>
         <div className={styles.bbFooter__container__left}>
           <div className={styles.bbFooter__container__left__logo}>
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.bbFooterGradient} />
-    </div>
+    </footer>
   );
 };
 

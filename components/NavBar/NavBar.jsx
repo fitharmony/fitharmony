@@ -24,7 +24,10 @@ const NavBar = ({ navTheme = "dark" }) => {
           </div>
         </div>
       </div>
-      <a className={styles.contactBtn}>
+      <a
+        className={styles.contactBtn}
+        href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
+      >
         <button>
           <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
           <span>Contact</span>

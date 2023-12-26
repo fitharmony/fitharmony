@@ -18,7 +18,7 @@ const AuthorDateCtr = ({
           <span>BodyBits Author</span>
         </div>
       </div>
-      <span className={styles.datePosted}>November 13, 2023</span>
+      <time className={styles.datePosted}>November 13, 2023</time>
     </div>
   );
 };

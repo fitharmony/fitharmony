@@ -60,6 +60,17 @@
     .bbFooter__container {
       flex-direction: column;
     }
+    .bbFooter__container__left {
+      .bbFooter__container__left__logo {
+        img {
+          width: 61.5px !important;
+          height: 61.5px !important;
+        }
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
     .bbFooter__container__right {
       .bbFooter__container__right__social {
         margin-left: 1em;

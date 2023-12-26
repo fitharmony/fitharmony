@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./BlogList.module.scss";
 import Layout from "../Layout";
 import BlogPost from "./BlogPreview";
@@ -18,22 +18,28 @@ const BlogList = ({
   filterBlogs = null,
   count = blogList.blogList.length,
 }) => {
-  let blogsToIterate = [...blogList.blogList];
+  const [shuffledBlogs, setShuffledBlogs] = useState([]);
 
-  // Shuffle the blogs if shuffleBlogs is true
-  if (shuffleBlogs) {
-    blogsToIterate = shuffleArray(blogsToIterate);
-  }
+  useEffect(() => {
+    let blogsToIterate = [...blogList.blogList];
 
-  // Filter out blogs with a title that matches filterBlogs
-  if (filterBlogs) {
-    blogsToIterate = blogsToIterate.filter(
-      (blog) => blog.title !== filterBlogs
-    );
-  }
+    // Shuffle the blogs if shuffleBlogs is true
+    if (shuffleBlogs) {
+      blogsToIterate = shuffleArray(blogsToIterate);
+    }
 
-  // Limit the number of blogs based on the count prop
-  blogsToIterate = blogsToIterate.slice(0, count);
+    // Filter out blogs with a title that matches filterBlogs
+    if (filterBlogs) {
+      blogsToIterate = blogsToIterate.filter(
+        (blog) => blog.title !== filterBlogs
+      );
+    }
+
+    // Limit the number of blogs based on the count prop
+    blogsToIterate = blogsToIterate.slice(0, count);
+
+    setShuffledBlogs(blogsToIterate);
+  }, [shuffleBlogs, filterBlogs, count]);
 
   return (
     <div className={`${styles.blogCtr}`}>
@@ -41,7 +47,7 @@ const BlogList = ({
         {/* <SectionSeparator title="BLOGS" /> */}
         <div className={styles.blogList}>
           {/* Iterate over bloglist */}
-          {blogsToIterate.map((blogData) => (
+          {shuffledBlogs.map((blogData) => (
             <BlogPost
               blogData={blogData}
               variant={variant}
