@@ -57,8 +57,23 @@
     h1 {
       font-size: $responsive-size-h1;
     }
+    .blogIntroBg {
+      height: 835px;
+    }
     .category {
       font-size: 0.925rem;
+    }
+    img {
+      height: 375px;
+      min-height: 375px;
+    }
+    &.blogs {
+      margin-bottom: 6.5em;
+      color: white;
+      .blogIntroBg {
+        height: 400px;
+        background: linear-gradient(to top, #06011b, #000000);
+      }
     }
   }
 }

@@ -44,3 +44,23 @@
     background: linear-gradient(to right, #2504a9, #4b20f6);
   }
 }
+
+@media (max-width: 640px) {
+  .authorDateCtr {
+    flex-direction: column;
+    .authorCtr {
+      .authorImg {
+        height: 41.5px;
+        width: 41.5px;
+        .svg {
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+    .datePosted {
+      padding-left: 3.35rem;
+      margin-top: 0.25rem;
+    }
+  }
+}

@@ -144,5 +144,11 @@ input[type="text"] {
 @media (max-width: 640px) {
   .blog-content {
     margin: 2em 0;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .dark-variant {
+    font-size: 0.925rem;
   }
 }
