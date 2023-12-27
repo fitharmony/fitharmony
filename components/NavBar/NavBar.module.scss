@@ -32,6 +32,11 @@
       .featuredCtr {
         display: flex;
         align-items: center;
+        // TODO: This is a temporary fix for the featured products button, which is disabled.
+        span {
+          font-weight: 500;
+          margin: 0 1.5em;
+        }
       }
     }
   }
@@ -44,7 +49,8 @@
   // White theme
   &.white {
     .options {
-      a {
+      a,
+      span {
         color: white;
       }
     }

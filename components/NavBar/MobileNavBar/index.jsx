@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./MobileNavBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faFacebookSquare,
@@ -58,6 +58,12 @@ const MobileNavBar = ({ navTheme }) => {
                     icon={faFacebookSquare}
                     style={{ cursor: "pointer" }}
                   />
+                  <a
+                    href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
+                    aria-label="Contact us"
+                  >
+                    <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
+                  </a>
                 </div>
               </div>
             </div>

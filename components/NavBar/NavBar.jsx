@@ -19,7 +19,7 @@ const NavBar = ({ navTheme = "dark" }) => {
           <Link href="/blogs">Fitness Blog</Link>
           {/* <a className="disabled">Exercises</a> */}
           <div className={`${styles.featuredCtr} disabled`}>
-            <a>Featured Products</a>
+            <span>Featured Products</span>
             <div className="featured">🔥COMING SOON</div>
           </div>
         </div>
@@ -27,6 +27,7 @@ const NavBar = ({ navTheme = "dark" }) => {
       <a
         className={styles.contactBtn}
         href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
+        aria-label="Contact us"
       >
         <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
         <span>Contact</span>
