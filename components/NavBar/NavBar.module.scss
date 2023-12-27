@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .contactBtn {
+    background: #dfe4ea;
+    border-radius: 7.5px;
+    padding: 0.75em 1.5em;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
   .titleOptions {
     display: flex;
     align-items: center;

@@ -28,10 +28,8 @@ const NavBar = ({ navTheme = "dark" }) => {
         className={styles.contactBtn}
         href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
       >
-        <button>
-          <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
-          <span>Contact</span>
-        </button>
+        <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
+        <span>Contact</span>
       </a>
       {/* Mobile Ctr */}
       <MobileNavBar navTheme={navTheme} />
