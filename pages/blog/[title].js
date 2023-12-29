@@ -43,51 +43,24 @@ function BlogPage() {
           <PageIntro
             title={selectedBlog.title}
             category={selectedBlog.category}
-            description={selectedBlog.description}
+            description={selectedBlog?.introParagraph}
             imageUrl={selectedBlog.imageUrl}
           />
           <AuthorDateCtr />
           <Disclaimer />
 
-          <section className="blog-content">
-            <p>
-              In commodo lectus molestie massa aliquam vulputate. Pellentesque
-              nec cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.
-              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
-              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
-              in pretium metus cursus. Curabitur rutrum enim sit amet mi
-              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
-              elementum lacus condimentum id. Integer vestibulum ornare massa,
-              at venenatis ligula fermentum id. Integer a luctus enim. In
-              commodo lectus molestie massa aliquam vulputate. Pellentesque nec
-              cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.{" "}
-              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
-              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
-              in pretium metus cursus. Curabitur rutrum enim sit amet mi
-              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
-              elementum lacus condimentum id. Integer vestibulum ornare massa,
-              at venenatis ligula fermentum id. Integer a luctus enim.
-            </p>
-            <br></br>
-            <p>
-              In commodo lectus molestie massa aliquam vulputate. Pellentesque
-              nec cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.
-              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
-              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
-              in pretium metus cursus. Curabitur rutrum enim sit amet mi
-              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
-              elementum lacus condimentum id. Integer vestibulum ornare massa,
-              at venenatis ligula fermentum id. Integer a luctus enim. In
-              commodo lectus molestie massa aliquam vulputate. Pellentesque nec
-              cursus ipsum, at malesuada enim. Nam hendrerit convallis nunc.{" "}
-              Fusce sollicitudin ipsum sem, et dignissim tortor euismod id. In
-              hac habitasse platea dictumst. Quisque ornare mi a justo pretium,
-              in pretium metus cursus. Curabitur rutrum enim sit amet mi
-              egestas, id efficitur ante cursus. Ut dignissim maximus tortor, in
-              elementum lacus condimentum id. Integer vestibulum ornare massa,
-              at venenatis ligula fermentum id. Integer a luctus enim.
-            </p>
-          </section>
+          <div className="blog-content">
+            {selectedBlog.content.map((content) => {
+              return (
+                <section key={content.subtitle}>
+                  <h2>{content.subtitle}</h2>
+                  {content.paragraphs.map((paragraph) => {
+                    return <p>{paragraph}</p>;
+                  })}
+                </section>
+              );
+            })}
+          </div>
 
           <aside>
             <div className="container">

@@ -121,6 +121,16 @@ input[type="text"] {
     font-size: 1.075em;
   }
   margin: 3em 0;
+  section {
+    margin-bottom: 2em;
+    h2 {
+      margin-bottom: 0.5em;
+      line-height: 110%;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
 }
 // Scrollbar styles
 ::-webkit-scrollbar {
@@ -144,6 +154,9 @@ input[type="text"] {
 @media (max-width: 640px) {
   .blog-content {
     margin: 2em 0;
+    h2 {
+      font-size: 1.45rem;
+    }
     p {
       font-size: 1rem;
     }

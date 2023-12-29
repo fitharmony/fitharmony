@@ -32,7 +32,7 @@ const BlogPost = ({ blogData, variant, isTrending }) => {
           )}
         </div>
         <h3>{blogData.title}</h3>
-        <p>{blogData.description}</p>
+        <p>{blogData.introParagraph}</p>
         <div className={styles.authDpCtr}>
           <div className={styles.author}>
             <div className={styles.authorImg}>
