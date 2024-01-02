@@ -46,7 +46,10 @@ function BlogPage() {
             description={selectedBlog?.introParagraph}
             imageUrl={selectedBlog.imageUrl}
           />
-          <AuthorDateCtr />
+          <AuthorDateCtr
+            author={selectedBlog.author}
+            date={selectedBlog["date-posted"]}
+          />
           <Disclaimer />
 
           <div className="blog-content">

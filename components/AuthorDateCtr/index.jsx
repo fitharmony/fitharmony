@@ -18,7 +18,7 @@ const AuthorDateCtr = ({
           <span>Author</span>
         </div>
       </div>
-      <time className={styles.datePosted}>November 13, 2023</time>
+      <time className={styles.datePosted}>{date}</time>
     </div>
   );
 };
