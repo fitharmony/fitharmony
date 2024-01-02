@@ -4,7 +4,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./AuthorDateCtr.module.scss";
 
 const AuthorDateCtr = ({
-  author = "BodyBits Author Name",
+  author = "FitHarmony Author Name",
   date = Date.now().toLocaleString,
 }) => {
   return (

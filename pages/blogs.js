@@ -26,7 +26,7 @@ function BlogPage() {
       </Head>
       <Layout showGradient={false} navTheme="white">
         <PageIntro
-          title="BodyBits Blogs"
+          title="FitHarmony Blogs"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus."
           variant="blogs"
         />

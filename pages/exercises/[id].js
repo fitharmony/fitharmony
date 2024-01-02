@@ -19,7 +19,9 @@ function ExercisePage() {
   return (
     <main>
       <Head>
-        <title>{selectedExercise.name || "BodyBits | Exercise Database"}</title>
+        <title>
+          {selectedExercise.name || "FitHarmony | Exercise Database"}
+        </title>
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

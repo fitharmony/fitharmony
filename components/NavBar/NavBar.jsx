@@ -7,12 +7,12 @@ import MobileNavBar from "./MobileNavBar";
 
 const NavBar = ({ navTheme = "dark" }) => {
   return (
-    <div className={`${styles.nav} ${styles[navTheme]}`}>
+    <nav className={`${styles.nav} ${styles[navTheme]}`}>
       <div className={styles.titleOptions}>
         <Link href="/">
           <div className={styles.navTitle}>
             <img src="/logo.png" alt="logo" />
-            <h2>BodyBits</h2>
+            <h2>FitHarmony</h2>
           </div>
         </Link>
         <div className={styles.options}>
@@ -26,15 +26,14 @@ const NavBar = ({ navTheme = "dark" }) => {
       </div>
       <a
         className={styles.contactBtn}
-        href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
-        aria-label="Contact us"
+        href="mailto:your-email@example.com?subject=FitHarmony Inquiry&body=Hello, I am inquiring about ..."
       >
         <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
         <span>Contact</span>
       </a>
       {/* Mobile Ctr */}
       <MobileNavBar navTheme={navTheme} />
-    </div>
+    </nav>
   );
 };
 

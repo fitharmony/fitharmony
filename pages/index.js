@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>BodyBits | Exercise Database</title>
+        <title>FitHarmony | Exercise Database</title>
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

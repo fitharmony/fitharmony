@@ -13,7 +13,7 @@ const BlogPost = ({ blogData, variant, isTrending }) => {
       <img
         className={styles.blogImg}
         src={blogData.imageUrl}
-        alt="bodybits-blog-preview-image"
+        alt="fitharmony-blog-preview-image"
       />
       <div className={styles.blogPreviewContent}>
         <div className={styles.category}>

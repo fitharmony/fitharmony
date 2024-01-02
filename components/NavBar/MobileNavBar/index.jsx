@@ -30,7 +30,7 @@ const MobileNavBar = ({ navTheme }) => {
               <Link href="/">
                 <div className={styles.navTitle}>
                   <img src="/logo.png" alt="logo" />
-                  <h2>BodyBits</h2>
+                  <h2>FitHarmony</h2>
                 </div>
               </Link>
               <FontAwesomeIcon

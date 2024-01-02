@@ -13,10 +13,10 @@ const Footer = () => {
         <div className={styles.bbFooter__container__left}>
           <div className={styles.bbFooter__container__left__logo}>
             <img src="/logo.png" alt="logo" />
-            <h2>bodybits.com</h2>
+            <h2>FitHarmony.com</h2>
           </div>
           <div className={styles.bbFooter__container__left__text}>
-            <p>© 2023 BodyBits. All rights reserved</p>
+            <p>© 2023 FitHarmony. All rights reserved</p>
             <a
               href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
               aria-label="Contact us"

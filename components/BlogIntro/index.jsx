@@ -15,7 +15,7 @@ const PageIntro = ({
         <div className={styles.category}>{category}</div>
         <h1>{title}</h1>
         <p>{description}</p>
-        {imageUrl && <img src={imageUrl} alt="bodybits-blog-image" />}
+        {imageUrl && <img src={imageUrl} alt="fitharmony-blog-image" />}
       </div>
     </header>
   );

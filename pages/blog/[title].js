@@ -29,7 +29,7 @@ function BlogPage() {
   return (
     <main>
       <Head>
-        <title>{selectedBlog.title || "BodyBits | Exercise Database"}</title>
+        <title>{selectedBlog.title || "FitHarmony | Exercise Database"}</title>
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
