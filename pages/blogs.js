@@ -27,7 +27,7 @@ function BlogPage() {
       <Layout showGradient={false} navTheme="white">
         <PageIntro
           title="FitHarmony Blogs"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum nisl eget semper. Sed leo sem, tincidunt eu dolor vitae, porta eleifend diam. Fusce scelerisque scelerisque ligula, non placerat nulla tincidunt nec. Mauris erat risus, condimentum id diam sit amet, vulputate bibendum velit. Donec molestie suscipit faucibus."
+          description="Embark on a wellness journey with our collection of informative and engaging fitness blogs. Explore a wide range of topics, including holistic well-being, nutrition, mental health, exercise, and more. Find valuable insights and expert advice to guide you towards a healthier and happier life."
           variant="blogs"
         />
         {/* </Link>s */}
