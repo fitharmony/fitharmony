@@ -26,7 +26,7 @@ const NavBar = ({ navTheme = "dark" }) => {
       </div>
       <a
         className={styles.contactBtn}
-        href="mailto:fitharmony@protonmail.com?subject=FitHarmony Inquiry&body=Hello, I am inquiring about ..."
+        href="mailto:fitharmony@proton.me?subject=FitHarmony Inquiry&body=Hello, I am inquiring about ..."
       >
         <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}
         <span>Contact</span>

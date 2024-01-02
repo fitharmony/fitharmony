@@ -65,7 +65,7 @@ const MobileNavBar = ({ navTheme }) => {
                     style={{ cursor: "pointer" }}
                   />
                   <a
-                    href="mailto:fitharmony@protonmail.com?subject=Subject Line&body=Hello, I would like to ..."
+                    href="mailto:fitharmony@proton.me?subject=Subject Line&body=Hello, I would like to ..."
                     aria-label="Contact us"
                   >
                     <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}

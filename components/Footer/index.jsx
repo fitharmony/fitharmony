@@ -19,10 +19,10 @@ const Footer = () => {
           <div className={styles.bbFooter__container__left__text}>
             <p>© 2023 FitHarmony. All rights reserved</p>
             <a
-              href="mailto:fitharmony@protonmail.com?subject=Subject Line&body=Hello, I would like to ..."
+              href="mailto:fitharmony@proton.me?subject=Subject Line&body=Hello, I would like to ..."
               aria-label="Contact us"
             >
-              fitharmony@protonmail.com
+              fitharmony@proton.me
             </a>
           </div>
         </div>
