@@ -18,7 +18,16 @@ function BlogPage() {
 
     const title = router.query.title;
     const blog =
-      data.blogList.find((blog) => blog.title === title) || data.blogList[0];
+      data.blogList.find(
+        (blog) =>
+          encodeURIComponent(
+            blog.title
+              .replace(/\s+/g, "-") // Replace spaces with hyphens
+              .replace(/:/g, "") // Remove colons
+              .replace(/,/g, "") // Remove commas
+              .toLowerCase() // Convert to lowercase
+          ) === title
+      ) || data.blogList[0];
     setSelectedBlog(blog);
   }, [router.isReady, router.query.title]);
 

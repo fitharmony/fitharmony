@@ -7,7 +7,13 @@ import Link from "next/link";
 const BlogPost = ({ blogData, variant, isTrending }) => {
   return (
     <Link
-      href={`/blog/${blogData.title}/`}
+      href={`/blog/${encodeURIComponent(
+        blogData.title
+          .replace(/\s+/g, "-") // Replace spaces with hyphens
+          .replace(/:/g, "") // Remove colons
+          .replace(/,/g, "") // Remove commas
+          .toLowerCase() // Convert to lowercase
+      )}/`}
       className={`${styles.blogPreview} ${styles[variant]}`}
     >
       <img
