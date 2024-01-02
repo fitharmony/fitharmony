@@ -117,7 +117,8 @@ input[type="text"] {
 }
 
 .blog-content {
-  p {
+  p,
+  li {
     font-size: 1.075em;
   }
   margin: 3em 0;
@@ -127,7 +128,8 @@ input[type="text"] {
       margin-bottom: 0.5em;
       line-height: 110%;
     }
-    p {
+    p,
+    li {
       margin-bottom: 1em;
     }
   }
@@ -157,7 +159,8 @@ input[type="text"] {
     h2 {
       font-size: 1.45rem;
     }
-    p {
+    p,
+    li {
       font-size: 1rem;
     }
   }

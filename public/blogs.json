@@ -143,7 +143,7 @@
       "date-posted": "January 1, 2023",
       "introParagraph": "Dive into our enlightening journey as we uncover the myriad health benefits of incorporating regular exercise, nutritious eating, and mental well-being into your daily routine. Discover how simple lifestyle changes can bring about profound improvements in your physical and mental health, leading to a happier, healthier you. Join us as we navigate the interconnected pathways of wellness, offering practical tips and insights for a transformative health experience.",
       "imageUrl": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg",
-      "trending": true,
+      "trending": false,
       "content": [
         {
           "subtitle": "Introduction to Health Benefits",
@@ -244,7 +244,7 @@
       "date-posted": "January 2, 2023",
       "introParagraph": "Dive into the world of meal planning with our expert guide, designed to simplify your eating habits while optimizing nutrition. Learn to create budget-friendly, diverse meal plans that cater to various dietary needs and preferences. From mastering the basics to exploring advanced meal planning tools, this guide offers practical tips for anyone looking to enhance their dietary habits, save time, and enjoy delicious, healthy meals every day. Embrace meal planning as a key to a balanced, stress-free lifestyle.",
       "imageUrl": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg",
-      "trending": true,
+      "trending": false,
       "content": [
         {
           "subtitle": "Introduction to Meal Planning",
@@ -273,19 +273,20 @@
           "paragraphs": [
             "Effective meal planning is a skill that can be mastered with a bit of organization and creativity. Here’s a step-by-step guide to help you start planning your meals more efficiently and enjoyably.",
 
-            "1. **Assess Your Dietary Goals and Preferences**: Begin by evaluating your nutritional needs, taste preferences, and any dietary restrictions. Whether you're aiming for weight loss, muscle building, or simply maintaining a healthy diet, your meal plan should reflect these goals. Consider the preferences and needs of other family members if you're planning meals for more than just yourself.",
-
-            "2. **Create a Meal Calendar**: Allocate specific meals for each day of the week. You can use a simple paper calendar, a digital app, or even a whiteboard in your kitchen. Plan for all meals - breakfast, lunch, dinner, and snacks. This helps in ensuring variety and prevents the monotony of eating the same foods.",
-
-            "3. **Compile Recipes and Meal Ideas**: Gather a collection of recipes that align with your dietary goals and are feasible to cook with your schedule. Include a mix of quick and easy recipes along with more elaborate options for days when you have more time. Don’t forget to factor in leftovers, which can save time and reduce waste.",
-
-            "4. **Make a Shopping List and Shop Smartly**: Based on your meal plan, create a shopping list. Stick to this list to avoid impulse buys or forgetting essential items. Shopping from local farmers' markets or bulk stores can also offer fresher, more affordable ingredients.",
-
-            "5. **Prep and Cook in Batches**: Allocate a specific day for meal prep. This can involve washing and chopping vegetables, cooking grains or legumes in bulk, or even fully preparing some meals and storing them in the fridge or freezer. Batch cooking can save significant time during the week.",
-
-            "6. **Be Flexible and Adjust as Needed**: While it’s good to have a plan, be prepared to adjust it as necessary. Unexpected events, changes in appetite, or simply a shift in mood can affect your meal plan. Being flexible can help you stick to your overall goal without feeling restricted.",
-
             "By following these steps, meal planning can become a rewarding and stress-free part of your routine. It not only contributes to a healthier diet but also brings a sense of order and calm to the often chaotic daily task of deciding what to eat."
+          ],
+          "list": [
+            "Assess Your Dietary Goals and Preferences: Begin by evaluating your nutritional needs, taste preferences, and any dietary restrictions. Whether you're aiming for weight loss, muscle building, or simply maintaining a healthy diet, your meal plan should reflect these goals. Consider the preferences and needs of other family members if you're planning meals for more than just yourself.",
+
+            "Create a Meal Calendar: Allocate specific meals for each day of the week. You can use a simple paper calendar, a digital app, or even a whiteboard in your kitchen. Plan for all meals - breakfast, lunch, dinner, and snacks. This helps in ensuring variety and prevents the monotony of eating the same foods.",
+
+            "Compile Recipes and Meal Ideas: Gather a collection of recipes that align with your dietary goals and are feasible to cook with your schedule. Include a mix of quick and easy recipes along with more elaborate options for days when you have more time. Don’t forget to factor in leftovers, which can save time and reduce waste.",
+
+            "Make a Shopping List and Shop Smartly: Based on your meal plan, create a shopping list. Stick to this list to avoid impulse buys or forgetting essential items. Shopping from local farmers' markets or bulk stores can also offer fresher, more affordable ingredients.",
+
+            "Prep and Cook in Batches: Allocate a specific day for meal prep. This can involve washing and chopping vegetables, cooking grains or legumes in bulk, or even fully preparing some meals and storing them in the fridge or freezer. Batch cooking can save significant time during the week.",
+
+            "Be Flexible and Adjust as Needed: While it’s good to have a plan, be prepared to adjust it as necessary. Unexpected events, changes in appetite, or simply a shift in mood can affect your meal plan. Being flexible can help you stick to your overall goal without feeling restricted."
           ]
         },
         {
@@ -293,17 +294,18 @@
           "paragraphs": [
             "Adapting meal planning to cater to various dietary needs is crucial for it to be effective and sustainable. Whether it’s for weight management, food allergies, or specific dietary lifestyles, customizing your meal plan ensures that your nutritional requirements are met while still enjoying your meals.",
 
-            "1. **Weight Loss or Weight Gain**: If your goal is weight management, calculate your caloric needs to determine your daily intake. For weight loss, focus on meals high in protein and fiber to keep you full longer. Include plenty of vegetables and controlled portions of whole grains. For weight gain, incorporate nutrient-dense foods like nuts, seeds, and lean proteins, and consider larger portion sizes or additional snacks.",
-
-            "2. **Vegetarian or Vegan Diets**: Plant-based diets require careful planning to ensure all nutrient needs are met, particularly protein, iron, calcium, and certain vitamins like B12. Incorporate a variety of plant proteins like beans, lentils, tofu, and tempeh. Utilize nuts, seeds, and leafy greens to get adequate iron and calcium.",
-
-            "3. **Gluten-Free Needs**: For those with celiac disease or gluten sensitivity, meal planning involves avoiding wheat, barley, and rye. Focus on naturally gluten-free foods like rice, quinoa, and potatoes, and explore gluten-free alternatives for bread and pasta.",
-
-            "4. **Low-Carb or Keto Diets**: These diets typically require reducing carbohydrate intake in favor of higher protein and fat. Emphasize leafy greens, low-carb vegetables, and quality sources of fat like avocados and olive oil. Be mindful of carb counts in fruits and vegetables.",
-
-            "5. **Food Allergies or Intolerances**: Identify safe foods and those that need to be avoided. Read labels carefully, and consider making homemade versions of common allergenic foods. Always have allergy-safe snacks on hand for convenience.",
-
             "Meal planning for specific dietary needs doesn't have to be restrictive or complicated. It offers an opportunity to explore new foods and recipes and can lead to discovering enjoyable, healthful eating habits that align with your dietary requirements."
+          ],
+          "list": [
+            "Weight Loss or Weight Gain: If your goal is weight management, calculate your caloric needs to determine your daily intake. For weight loss, focus on meals high in protein and fiber to keep you full longer. Include plenty of vegetables and controlled portions of whole grains. For weight gain, incorporate nutrient-dense foods like nuts, seeds, and lean proteins, and consider larger portion sizes or additional snacks.",
+
+            "Vegetarian or Vegan Diets: Plant-based diets require careful planning to ensure all nutrient needs are met, particularly protein, iron, calcium, and certain vitamins like B12. Incorporate a variety of plant proteins like beans, lentils, tofu, and tempeh. Utilize nuts, seeds, and leafy greens to get adequate iron and calcium.",
+
+            "Gluten-Free Needs: For those with celiac disease or gluten sensitivity, meal planning involves avoiding wheat, barley, and rye. Focus on naturally gluten-free foods like rice, quinoa, and potatoes, and explore gluten-free alternatives for bread and pasta.",
+
+            "Low-Carb or Keto Diets: These diets typically require reducing carbohydrate intake in favor of higher protein and fat. Emphasize leafy greens, low-carb vegetables, and quality sources of fat like avocados and olive oil. Be mindful of carb counts in fruits and vegetables.",
+
+            "Food Allergies or Intolerances: Identify safe foods and those that need to be avoided. Read labels carefully, and consider making homemade versions of common allergenic foods. Always have allergy-safe snacks on hand for convenience."
           ]
         },
         {
@@ -311,21 +313,22 @@
           "paragraphs": [
             "Meal planning can be a cost-effective way to eat healthily, but it requires some strategy to maximize savings while maintaining nutritional quality. Here are tips to help you plan meals that are both budget-friendly and nutritious.",
 
-            "1. **Plan Around Sales and Discounts**: Keep an eye on supermarket flyers and online deals. Plan your meals around ingredients that are on sale, especially when it comes to meat and seafood, which can be more expensive.",
-
-            "2. **Buy in Bulk and Use Seasonal Produce**: Purchasing bulk items like grains, legumes, and certain frozen foods can save money in the long run. Opt for seasonal fruits and vegetables, as they are often cheaper and fresher.",
-
-            "3. **Cook from Scratch**: Preparing meals from scratch, rather than buying pre-made or processed foods, can be more economical. Homemade meals also tend to be healthier, as you have complete control over the ingredients.",
-
-            "4. **Utilize Leftovers Wisely**: Plan to use leftovers in creative ways. For instance, leftover roasted chicken can be used in sandwiches, salads, or soups. This approach reduces waste and stretches your food budget further.",
-
-            "5. **Limit Meat Consumption**: Consider having meatless days or use meat as a side rather than the main dish. Plant-based proteins like beans and lentils are not only cheaper but also nutritious.",
-
-            "6. **Store Food Properly to Avoid Waste**: Proper storage of food can extend its shelf life. Use airtight containers for pantry items, store produce correctly, and freeze portions you won’t use right away.",
-
-            "7. **Plan Portion Sizes**: Overeating not only affects health but also your budget. By controlling portion sizes, you ensure that your meals last as planned and avoid unnecessary additional cooking.",
-
             "Adopting these budget-friendly meal planning strategies can lead to significant savings over time. With a little creativity and planning, eating well on a budget is entirely achievable, proving that healthy eating doesn't have to be expensive."
+          ],
+          "list": [
+            "Plan Around Sales and Discounts: Keep an eye on supermarket flyers and online deals. Plan your meals around ingredients that are on sale, especially when it comes to meat and seafood, which can be more expensive.",
+
+            "Buy in Bulk and Use Seasonal Produce: Purchasing bulk items like grains, legumes, and certain frozen foods can save money in the long run. Opt for seasonal fruits and vegetables, as they are often cheaper and fresher.",
+
+            "Cook from Scratch: Preparing meals from scratch, rather than buying pre-made or processed foods, can be more economical. Homemade meals also tend to be healthier, as you have complete control over the ingredients.",
+
+            "Utilize Leftovers Wisely: Plan to use leftovers in creative ways. For instance, leftover roasted chicken can be used in sandwiches, salads, or soups. This approach reduces waste and stretches your food budget further.",
+
+            "Limit Meat Consumption: Consider having meatless days or use meat as a side rather than the main dish. Plant-based proteins like beans and lentils are not only cheaper but also nutritious.",
+
+            "Store Food Properly to Avoid Waste: Proper storage of food can extend its shelf life. Use airtight containers for pantry items, store produce correctly, and freeze portions you won’t use right away.",
+
+            "Plan Portion Sizes: Overeating not only affects health but also your budget. By controlling portion sizes, you ensure that your meals last as planned and avoid unnecessary additional cooking."
           ]
         },
         {
@@ -333,19 +336,20 @@
           "paragraphs": [
             "While meal planning is about organization and structure, it doesn’t mean your meals have to become monotonous or inflexible. Introducing variety and allowing for flexibility are key to maintaining enthusiasm and adaptability in your meal planning routine.",
 
-            "1. **Rotate Recipes to Avoid Boredom**: Avoid getting stuck in a recipe rut by rotating meals regularly. This can mean trying new recipes, experimenting with different cuisines, or simply tweaking your favorite dishes to give them a new twist. A varied diet is not only more enjoyable but also ensures a wider range of nutrients.",
-
-            "2. **Plan for 'Flexible' Meals**: Sometimes, plans change, and your meal plan needs to adapt. Include a few 'flexible' meals in your weekly plan that can be easily shifted or adjusted. These could be simple dishes with ingredients that have a longer shelf life or meals that can be quickly assembled.",
-
-            "3. **Use Theme Nights to Add Excitement**: Assign theme nights to each day of the week, like 'Meatless Monday,' 'Taco Tuesday,' or 'Stir-fry Saturday.' This approach adds an element of fun and predictability to your meal planning, making it something to look forward to.",
-
-            "4. **Batch Cook with Variations**: When batch cooking, prepare base ingredients in bulk, like grains or proteins, and then use them in different ways throughout the week. For example, cook a large batch of quinoa to be used in salads, as a side dish, or even in quinoa bowls with various toppings.",
-
-            "5. **Keep a Well-Stocked Pantry**: Having a pantry stocked with essentials like grains, spices, canned goods, and frozen vegetables allows for last-minute meal adjustments without compromising on nutrition or taste.",
-
-            "6. **Embrace Seasonal and Fresh Ingredients**: Use seasonal produce to inspire your meal planning. Seasonal ingredients are not only fresher and more flavorful but often more affordable, adding a natural variety to your diet throughout the year.",
-
             "By incorporating these elements of variety and flexibility, meal planning can remain a dynamic and enjoyable part of your lifestyle, continuously adapting to your evolving tastes, schedule, and nutritional needs."
+          ],
+          "list": [
+            "Rotate Recipes to Avoid Boredom: Avoid getting stuck in a recipe rut by rotating meals regularly. This can mean trying new recipes, experimenting with different cuisines, or simply tweaking your favorite dishes to give them a new twist. A varied diet is not only more enjoyable but also ensures a wider range of nutrients.",
+
+            "Plan for 'Flexible' Meals: Sometimes, plans change, and your meal plan needs to adapt. Include a few 'flexible' meals in your weekly plan that can be easily shifted or adjusted. These could be simple dishes with ingredients that have a longer shelf life or meals that can be quickly assembled.",
+
+            "Use Theme Nights to Add Excitement: Assign theme nights to each day of the week, like 'Meatless Monday,' 'Taco Tuesday,' or 'Stir-fry Saturday.' This approach adds an element of fun and predictability to your meal planning, making it something to look forward to.",
+
+            "Batch Cook with Variations: When batch cooking, prepare base ingredients in bulk, like grains or proteins, and then use them in different ways throughout the week. For example, cook a large batch of quinoa to be used in salads, as a side dish, or even in quinoa bowls with various toppings.",
+
+            "Keep a Well-Stocked Pantry: Having a pantry stocked with essentials like grains, spices, canned goods, and frozen vegetables allows for last-minute meal adjustments without compromising on nutrition or taste.",
+
+            "Embrace Seasonal and Fresh Ingredients: Use seasonal produce to inspire your meal planning. Seasonal ingredients are not only fresher and more flavorful but often more affordable, adding a natural variety to your diet throughout the year."
           ]
         },
         {
@@ -353,19 +357,20 @@
           "paragraphs": [
             "In the digital age, an array of tools and resources are available to simplify and enhance the meal planning process. From apps that help organize your shopping lists to websites offering a plethora of recipes, these tools can make meal planning more efficient and enjoyable.",
 
-            "1. **Meal Planning Apps**: There are numerous apps designed specifically for meal planning. These apps allow you to create weekly meal plans, generate shopping lists, and even offer recipe suggestions based on your dietary preferences. Some popular apps include 'Mealime', 'Yummly', and 'Paprika Recipe Manager'.",
-
-            "2. **Online Recipe Databases and Blogs**: Websites like 'Allrecipes', 'Epicurious', and countless food blogs provide a vast array of recipes to suit any palate or dietary need. These resources are great for finding new meal ideas and inspiration.",
-
-            "3. **Digital Grocery Shopping Lists**: Utilize apps like 'AnyList' or 'Grocery IQ' to keep track of your grocery needs. Many of these apps allow you to categorize items by aisles or store sections, making shopping more streamlined.",
-
-            "4. **Nutrition Trackers**: For those focused on macronutrients or calorie counting, nutrition tracker apps like 'MyFitnessPal' or 'Cronometer' can be invaluable. They help you ensure that your meal plans align with your nutritional goals.",
-
-            "5. **Printable Meal Planners and Calendars**: For those who prefer a more tangible approach, printable meal planners and calendars can be found online. These tools can be particularly useful for visualizing your weekly meals and grocery lists.",
-
-            "6. **Cookbooks and Cooking Guides**: Sometimes, traditional cookbooks and cooking guides can be the best inspiration for meal planning. They offer tried and tested recipes and often provide useful cooking tips and techniques.",
-
             "By leveraging these tools and resources, you can make meal planning a more streamlined and less daunting task. Whether you prefer digital solutions or traditional methods, there’s a tool out there to fit your meal planning style."
+          ],
+          "list": [
+            "Meal Planning Apps: There are numerous apps designed specifically for meal planning. These apps allow you to create weekly meal plans, generate shopping lists, and even offer recipe suggestions based on your dietary preferences. Some popular apps include 'Mealime', 'Yummly', and 'Paprika Recipe Manager'.",
+
+            "Online Recipe Databases and Blogs: Websites like 'Allrecipes', 'Epicurious', and countless food blogs provide a vast array of recipes to suit any palate or dietary need. These resources are great for finding new meal ideas and inspiration.",
+
+            "Digital Grocery Shopping Lists: Utilize apps like 'AnyList' or 'Grocery IQ' to keep track of your grocery needs. Many of these apps allow you to categorize items by aisles or store sections, making shopping more streamlined.",
+
+            "Nutrition Trackers: For those focused on macronutrients or calorie counting, nutrition tracker apps like 'MyFitnessPal' or 'Cronometer' can be invaluable. They help you ensure that your meal plans align with your nutritional goals.",
+
+            "Printable Meal Planners and Calendars: For those who prefer a more tangible approach, printable meal planners and calendars can be found online. These tools can be particularly useful for visualizing your weekly meals and grocery lists.",
+
+            "Cookbooks and Cooking Guides: Sometimes, traditional cookbooks and cooking guides can be the best inspiration for meal planning. They offer tried and tested recipes and often provide useful cooking tips and techniques."
           ]
         },
         {
@@ -376,6 +381,42 @@
             "The benefits of meal planning are manifold. It brings nutritional balance to your diet, saves time and money, reduces food waste, and helps in adhering to dietary goals and restrictions. Whether you're cooking for one or a whole family, meal planning can be adapted to fit any lifestyle. The key is to start simple, be consistent, and find what works best for you.",
 
             "As we conclude this guide, remember that meal planning is flexible and can evolve with your lifestyle and dietary changes. It's an ongoing journey of discovering new recipes, understanding your nutritional needs, and enjoying the process of cooking and eating. Embrace meal planning as a tool to enhance your health, reduce stress around mealtime, and enrich your culinary experience. Here's to healthier, happier meals ahead!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Embracing Wellness: A Comprehensive Guide to Nurturing Your Mind, Body, and Spirit",
+      "category": "Wellness and Health",
+      "author": "Jordan McKenzie",
+      "date-posted": "January 2, 2023",
+      "introParagraph": "Join us on a journey to discover the essence of wellness. Our guide delves into the various dimensions of wellness, offering insights into how you can nurture your physical, mental, and emotional health. From nutritional wisdom to the benefits of physical activity and the importance of mental peace, learn how to create a personalized wellness routine that resonates with your unique needs and lifestyle.",
+      "imageUrl": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg",
+      "trending": false,
+      "content": [
+        {
+          "subtitle": "Introduction to Wellness",
+          "paragraphs": [
+            "Wellness is a term that captures the essence of a balanced and healthy life, encompassing much more than mere physical health. It's a dynamic process of change and growth, a pursuit of complete physical, mental, and emotional well-being. In our fast-paced, modern world, where stress and health challenges are prevalent, understanding and embracing wellness has never been more important. It's about making conscious choices towards a healthier existence, both in mind and body.",
+
+            "The concept of wellness is holistic and multifaceted. It's not just about avoiding illness or being in good physical shape; it's also about nurturing your mental state, finding emotional balance, and connecting with your environment in positive ways. Wellness is deeply personal and varies with each individual’s lifestyle, beliefs, and experiences. It involves a continuous journey of self-discovery and adaptation, striving for a harmonious life where all aspects of well-being are in balance.",
+
+            "This introduction to wellness sets the stage for a deeper exploration into its various dimensions. We'll uncover the layers of physical, mental, and emotional wellness, and provide you with practical guidance on how to integrate wellness practices into your everyday life. From nutritional choices to physical activities, and mental health strategies, this journey will guide you towards a more fulfilling and well-rounded life."
+          ]
+        },
+        {
+          "subtitle": "Dimensi  ons of Wellness: Physical, Mental, and Emotional Health",
+          "paragraphs": [
+            "Wellness is a multi-dimensional concept, encompassing several key aspects of human health and well-being. Understanding these dimensions is crucial for achieving a balanced and fulfilling life.",
+
+            "Each of these dimensions is interconnected; neglect in one area can impact the others. For instance, poor physical health can lead to mental and emotional distress, just as emotional turmoil can manifest in physical symptoms. The key to wellness is finding a balance that works for your unique needs and circumstances, continuously striving for harmony among all these aspects of health."
+          ],
+          "list": [
+            "Physical Wellness: This dimension involves maintaining a healthy body through regular exercise, proper nutrition, adequate sleep, and abstaining from harmful habits. It's not just about the absence of disease but fostering a state of physical health that allows one to go through daily activities without undue fatigue or physical stress. Physical wellness is achieved through a combination of healthy eating, physical activity, and regular health check-ups.",
+
+            "Mental Wellness: Mental wellness is about having a positive and optimistic attitude towards life, maintaining a sense of purpose, and the ability to manage stress effectively. It involves the capacity to learn new things and adapt to change, emotional resilience, and the development of a strong sense of self. Practices like mindfulness, meditation, and engaging in mentally stimulating activities contribute to mental wellness.",
+
+            "Emotional Wellness: Closely linked to mental wellness, emotional wellness refers to the ability to understand, express, and manage one's emotions effectively. It involves recognizing and respecting your feelings and those of others, dealing with stress constructively, and developing strong emotional coping skills. Emotional wellness is nurtured through activities like social connections, self-reflection, and seeking support when needed."
           ]
         }
       ]

@@ -57,6 +57,13 @@ function BlogPage() {
                   {content.paragraphs.map((paragraph) => {
                     return <p>{paragraph}</p>;
                   })}
+                  {content?.list && (
+                    <ul>
+                      {content.list.map((item) => {
+                        return <li>{item}</li>;
+                      })}
+                    </ul>
+                  )}
                 </section>
               );
             })}
