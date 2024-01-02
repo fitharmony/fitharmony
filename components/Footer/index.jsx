@@ -1,11 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookSquare,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -32,9 +29,15 @@ const Footer = () => {
             <p>Terms & Conditions</p> */}
           </div>
           <div className={styles.bbFooter__container__right__social}>
-            <FontAwesomeIcon className={styles.svg} icon={faFacebookSquare} />
-            <FontAwesomeIcon className={styles.svg} icon={faInstagram} />
-            <FontAwesomeIcon className={styles.svg} icon={faTwitter} />
+            <Link
+              href="https://www.instagram.com/thefitharmony/"
+              target="_blank"
+            >
+              <FontAwesomeIcon className={styles.svg} icon={faInstagram} />
+            </Link>
+            <Link href="https://twitter.com/TheFitHarmony" target="_blank">
+              <FontAwesomeIcon className={styles.svg} icon={faTwitter} />
+            </Link>
           </div>
         </div>
       </div>

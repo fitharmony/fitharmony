@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
-  faFacebookSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
@@ -49,21 +48,26 @@ const MobileNavBar = ({ navTheme }) => {
               <div className={styles.contactCtr}>
                 <p>Connect With Us</p>
                 <div className={styles.socialCtr}>
-                  <FontAwesomeIcon
-                    className="fa-icon"
-                    icon={faInstagram}
-                    style={{ cursor: "pointer" }}
-                  />
-                  <FontAwesomeIcon
-                    className="fa-icon"
-                    icon={faFacebookSquare}
-                    style={{ cursor: "pointer" }}
-                  />
-                  <FontAwesomeIcon
-                    className="fa-icon"
-                    icon={faTwitterSquare}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <Link
+                    href="https://www.instagram.com/thefitharmony/"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      className="fa-icon"
+                      icon={faInstagram}
+                      style={{ cursor: "pointer" }}
+                    />
+                  </Link>
+                  <Link
+                    href="https://twitter.com/TheFitHarmony"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      className="fa-icon"
+                      icon={faTwitterSquare}
+                      style={{ cursor: "pointer" }}
+                    />
+                  </Link>
                   <a
                     href="mailto:fitharmony@proton.me?subject=Subject Line&body=Hello, I would like to ..."
                     aria-label="Contact us"
