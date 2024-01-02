@@ -6,6 +6,7 @@ import { faBars, faClose, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faFacebookSquare,
+  faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
@@ -58,8 +59,13 @@ const MobileNavBar = ({ navTheme }) => {
                     icon={faFacebookSquare}
                     style={{ cursor: "pointer" }}
                   />
+                  <FontAwesomeIcon
+                    className="fa-icon"
+                    icon={faTwitterSquare}
+                    style={{ cursor: "pointer" }}
+                  />
                   <a
-                    href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
+                    href="mailto:fitharmony@protonmail.com?subject=Subject Line&body=Hello, I would like to ..."
                     aria-label="Contact us"
                   >
                     <FontAwesomeIcon className="fa-icon" icon={faEnvelope} />{" "}

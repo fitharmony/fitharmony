@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
   faInstagram,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -18,10 +19,10 @@ const Footer = () => {
           <div className={styles.bbFooter__container__left__text}>
             <p>© 2023 FitHarmony. All rights reserved</p>
             <a
-              href="mailto:your-email@example.com?subject=Subject Line&body=Hello, I would like to ..."
+              href="mailto:fitharmony@protonmail.com?subject=Subject Line&body=Hello, I would like to ..."
               aria-label="Contact us"
             >
-              hello@example.com
+              fitharmony@protonmail.com
             </a>
           </div>
         </div>
@@ -33,6 +34,7 @@ const Footer = () => {
           <div className={styles.bbFooter__container__right__social}>
             <FontAwesomeIcon className={styles.svg} icon={faFacebookSquare} />
             <FontAwesomeIcon className={styles.svg} icon={faInstagram} />
+            <FontAwesomeIcon className={styles.svg} icon={faTwitter} />
           </div>
         </div>
       </div>
