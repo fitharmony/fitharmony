@@ -24,10 +24,6 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bbFooter__container__right}>
-          <div className={styles.bbFooter__container__right__text}>
-            {/* <p>Privacy Policy</p>
-            <p>Terms & Conditions</p> */}
-          </div>
           <div className={styles.bbFooter__container__right__social}>
             <Link
               href="https://www.instagram.com/thefitharmony/"
@@ -38,6 +34,10 @@ const Footer = () => {
             <Link href="https://twitter.com/TheFitHarmony" target="_blank">
               <FontAwesomeIcon className={styles.svg} icon={faTwitter} />
             </Link>
+          </div>
+          <div className={styles.bbFooter__container__right__text}>
+            <Link href="#">Privacy Policy</Link>
+            <Link href="#">Terms & Conditions</Link>
           </div>
         </div>
       </div>

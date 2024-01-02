@@ -29,10 +29,21 @@
     .bbFooter__container__right {
       .bbFooter__container__right__social {
         display: flex;
+        justify-content: flex-end;
         .svg {
           height: 30px;
           width: 30px;
-          margin-right: 1em;
+          margin-left: 1em;
+        }
+      }
+      .bbFooter__container__right__text {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: right;
+        a {
+          margin-top: 0.25em;
+          font-weight: 500;
         }
       }
     }
@@ -77,7 +88,19 @@
     }
     .bbFooter__container__right {
       .bbFooter__container__right__social {
-        margin-left: 1em;
+        margin-left: 0.925em;
+        justify-content: flex-start !important;
+        .svg {
+          margin-right: 1em;
+          margin-left: 0 !important;
+        }
+      }
+      .bbFooter__container__right__text {
+        justify-content: flex-start !important;
+        margin-left: 0.925em;
+        a {
+          text-align: left;
+        }
       }
     }
   }
