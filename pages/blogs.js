@@ -11,7 +11,11 @@ function BlogPage() {
   return (
     <main>
       <Head>
-        <title>Body Blogs</title>
+        <title>Explore Our Fitness and Wellness Blogs - FitHarmony</title>
+        <meta
+          name="description"
+          content="Explore a collection of fitness and wellness blogs at FitHarmony. Discover articles on nutrition, exercise, mental health, and more for a healthier lifestyle."
+        />
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

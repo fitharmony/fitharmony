@@ -9,7 +9,11 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>FitHarmony | Exercise Database</title>
+        <title>FitHarmony | Your Source for Wellness and Fitness</title>
+        <meta
+          name="description"
+          content="Discover a world of wellness and fitness at FitHarmony. Explore articles, tips, and insights on nutrition, exercise, mental health, and more for a healthier life."
+        />
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
