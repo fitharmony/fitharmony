@@ -2,6 +2,8 @@
   "blogList": [
     {
       "title": "Mastering the Art of Meal Planning: A Guide to Healthy, Hassle-Free Eating",
+      "titleTag": "Mastering Meal Planning for Healthy Eating | FitHarmony",
+      "metaDescription": "Learn the art of mastering meal planning for a successful journey to healthy eating. Discover tips, recipes, and strategies for nutritious meals.",
       "category": "Nutrition and Diet",
       "author": "Jordan McKenzie",
       "date-posted": "January 2, 2024",
@@ -150,6 +152,8 @@
     },
     {
       "title": "Achieving Better Health: A Deep Dive into Wellness and Fitness Strategies",
+      "titleTag": "Achieving Better Health: A Deep Dive into Wellness and Fitness Strategies | FitHarmony",
+      "metaDescription": "Explore strategies for achieving better health through wellness and fitness. Dive deep into nutrition, exercise, mental health, and more for a healthier life.",
       "category": "Holistic Health",
       "author": "Alexandra Reed",
       "date-posted": "December 28, 2023",
@@ -215,6 +219,8 @@
     },
     {
       "title": "Maximizing Fitness Goals with the Best Home Gym Equipment",
+      "titleTag": "Ultimate Guide to Home Gym Equipment | FitHarmony",
+      "metaDescription": "Create your perfect fitness haven with our ultimate guide to home gym equipment. Explore the best fitness gear and tips for effective home workouts.",
       "category": "Home Workouts",
       "author": "Elijah Peterson",
       "date-posted": "December 29, 2023",
@@ -286,6 +292,8 @@
     },
     {
       "title": "Unlocking the Secrets to Lifelong Wellness: Exploring the Comprehensive Health Benefits of a Balanced Lifestyle",
+      "titleTag": "Comprehensive Health Benefits of a Balanced Lifestyle | FitHarmony",
+      "metaDescription": "Discover the comprehensive health benefits of leading a balanced lifestyle. Explore nutrition, fitness, mental health, and wellness strategies for lifelong well-being.",
       "category": "Wellness and Health",
       "author": "Jordan McKenzie",
       "date-posted": "January 1, 2024",
@@ -387,6 +395,8 @@
     },
     {
       "title": "Embracing Wellness: A Comprehensive Guide to Nurturing Your Mind, Body, and Spirit",
+      "titleTag": "The Power of Wellness for a Fulfilling Life | FitHarmony",
+      "metaDescription": "Unlock the transformative power of wellness and nurture your body and mind for a fulfilling life. Explore strategies for holistic well-being.",
       "category": "Wellness and Health",
       "author": "Jordan McKenzie",
       "date-posted": "January 2, 2024",

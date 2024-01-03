@@ -38,7 +38,10 @@ function BlogPage() {
   return (
     <main>
       <Head>
-        <title>{selectedBlog.title || "FitHarmony | Exercise Database"}</title>
+        <title>
+          {`${selectedBlog.titleTag}` || "FitHarmony | Exercise Database"}
+        </title>
+        <meta name="description" content={selectedBlog.metaDescription} />
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
