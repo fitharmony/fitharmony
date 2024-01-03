@@ -89,8 +89,10 @@ function BlogPage() {
               <h3>[VIEW SIMILAR BLOGS]</h3>
               <BlogList
                 variant="full"
-                filterBlogs={selectedBlog.title}
-                shuffleBlogs={true}
+                filterBlogsByTitleAndCategory={{
+                  title: selectedBlog.title,
+                  category: selectedBlog.category,
+                }}
                 count={4}
               />
             </div>

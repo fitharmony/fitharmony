@@ -15,7 +15,8 @@ function shuffleArray(array) {
 const BlogList = ({
   variant,
   shuffleBlogs = false,
-  filterBlogs = null,
+  filterBlogsByTitle = null,
+  filterBlogsByTitleAndCategory = null,
   count = blogList.blogList.length,
 }) => {
   const [shuffledBlogs, setShuffledBlogs] = useState([]);
@@ -29,17 +30,32 @@ const BlogList = ({
     }
 
     // Filter out blogs with a title that matches filterBlogs
-    if (filterBlogs) {
+    if (filterBlogsByTitle) {
       blogsToIterate = blogsToIterate.filter(
-        (blog) => blog.title !== filterBlogs
+        (blog) => blog.title !== filterBlogsByTitle
       );
+    }
+
+    // Filter out blogs with a title and category that matches filterBlogs
+    if (filterBlogsByTitleAndCategory) {
+      blogsToIterate = blogsToIterate.filter(
+        (blog) =>
+          blog.title !== filterBlogsByTitleAndCategory.title &&
+          blog.category == filterBlogsByTitleAndCategory.category
+      );
+      // If there are no blogs left after filtering, return filter blogs by title only.
+      if (blogsToIterate.length === 0) {
+        blogsToIterate = [...blogList.blogList].filter(
+          (blog) => blog.title !== filterBlogsByTitleAndCategory.title
+        );
+      }
     }
 
     // Limit the number of blogs based on the count prop
     blogsToIterate = blogsToIterate.slice(0, count);
 
     setShuffledBlogs(blogsToIterate);
-  }, [shuffleBlogs, filterBlogs, count]);
+  }, [shuffleBlogs, filterBlogsByTitle, filterBlogsByTitleAndCategory, count]);
 
   return (
     <div className={`${styles.blogCtr}`}>
