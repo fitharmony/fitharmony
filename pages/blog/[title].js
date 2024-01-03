@@ -1,4 +1,5 @@
-import { useRouter } from "next/router";
+// pages/blog/[title].js
+
 import Layout from "../../components/Layout";
 import Head from "next/head";
 import data from "../../public/blogs.json";
@@ -7,41 +8,16 @@ import PageIntro from "../../components/BlogIntro";
 import AuthorDateCtr from "../../components/AuthorDateCtr";
 import BlogList from "../../components/BlogList";
 import Disclaimer from "../../components/Disclaimer";
-import { useEffect, useState } from "react";
 
-function BlogPage() {
-  const router = useRouter();
-  const [selectedBlog, setSelectedBlog] = useState(null);
-
-  useEffect(() => {
-    if (!router.isReady) return;
-
-    const title = router.query.title;
-    const blog =
-      data.blogList.find(
-        (blog) =>
-          encodeURIComponent(
-            blog.title
-              .replace(/\s+/g, "-") // Replace spaces with hyphens
-              .replace(/:/g, "") // Remove colons
-              .replace(/,/g, "") // Remove commas
-              .toLowerCase() // Convert to lowercase
-          ) === title
-      ) || data.blogList[0];
-    setSelectedBlog(blog);
-  }, [router.isReady, router.query.title]);
-
-  if (!selectedBlog) {
-    return <div>Loading...</div>; // Or any other placeholder content
-  }
+function BlogPage({ blog }) {
+  // Modified to receive blog data as a prop
+  // Remove the useEffect and router logic for fetching blog data
 
   return (
     <main>
       <Head>
-        <title>
-          {`${selectedBlog.titleTag}` || "FitHarmony | Exercise Database"}
-        </title>
-        <meta name="description" content={selectedBlog.metaDescription} />
+        <title>{`${blog.titleTag}` || "FitHarmony | Exercise Database"}</title>
+        <meta name="description" content={blog.metaDescription} />
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,19 +29,16 @@ function BlogPage() {
       <Layout navTheme="white" showGradient={false}>
         <article>
           <PageIntro
-            title={selectedBlog.title}
-            category={selectedBlog.category}
-            description={selectedBlog?.introParagraph}
-            imageUrl={selectedBlog.imageUrl}
+            title={blog.title}
+            category={blog.category}
+            description={blog?.introParagraph}
+            imageUrl={blog.imageUrl}
           />
-          <AuthorDateCtr
-            author={selectedBlog.author}
-            date={selectedBlog["date-posted"]}
-          />
+          <AuthorDateCtr author={blog.author} date={blog["date-posted"]} />
           <Disclaimer />
 
           <div className="blog-content">
-            {selectedBlog.content.map((content) => {
+            {blog.content.map((content) => {
               return (
                 <section key={content.subtitle}>
                   <h2>{content.subtitle}</h2>
@@ -90,8 +63,8 @@ function BlogPage() {
               <BlogList
                 variant="full"
                 filterBlogsByTitleAndCategory={{
-                  title: selectedBlog.title,
-                  category: selectedBlog.category,
+                  title: blog.title,
+                  category: blog.category,
                 }}
                 count={4}
               />
@@ -102,6 +75,43 @@ function BlogPage() {
       <Footer />
     </main>
   );
+}
+
+export async function getStaticPaths() {
+  // Generate paths for all blog pages
+  const paths = data.blogList.map((blog) => ({
+    params: {
+      title: encodeURIComponent(
+        blog.title
+          .replace(/\s+/g, "-") // Replace spaces with hyphens
+          .replace(/:/g, "") // Remove colons
+          .replace(/,/g, "") // Remove commas
+          .toLowerCase() // Convert to lowercase
+      ),
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false, // Show 404 for pages that don't match
+  };
+}
+
+export async function getStaticProps({ params }) {
+  // Fetch the specific blog data using params.title
+  const blog = data.blogList.find(
+    (blog) =>
+      encodeURIComponent(
+        blog.title
+          .replace(/\s+/g, "-") // Replace spaces with hyphens
+          .replace(/:/g, "") // Remove colons
+          .replace(/,/g, "") // Remove commas
+          .toLowerCase() // Convert to lowercase
+      ) === params.title
+  );
+  return {
+    props: { blog },
+  };
 }
 
 export default BlogPage;
