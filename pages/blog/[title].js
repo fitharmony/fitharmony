@@ -57,18 +57,16 @@ function BlogPage({ blog }) {
             })}
           </div>
 
-          <aside>
-            <div className="container">
-              <h3>[VIEW SIMILAR BLOGS]</h3>
-              <BlogList
-                variant="full"
-                filterBlogsByTitleAndCategory={{
-                  title: blog.title,
-                  category: blog.category,
-                }}
-                count={4}
-              />
-            </div>
+          <aside className="container">
+            <h3>[VIEW SIMILAR BLOGS]</h3>
+            <BlogList
+              variant="full"
+              filterBlogsByTitleAndCategory={{
+                title: blog.title,
+                category: blog.category,
+              }}
+              count={4}
+            />
           </aside>
         </article>
       </Layout>
