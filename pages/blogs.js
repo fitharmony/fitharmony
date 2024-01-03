@@ -35,7 +35,6 @@ function BlogPage() {
           description="Embark on a wellness journey with our collection of informative and engaging fitness blogs. Explore a wide range of topics, including holistic well-being, nutrition, mental health, exercise, and more. Find valuable insights and expert advice to guide you towards a healthier and happier life."
           variant="blogs"
         />
-        {/* </Link>s */}
         <section>
           {/* Button to view random blog */}
           <RandomBlogButton blogList={blogList.blogList} />
