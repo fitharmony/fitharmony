@@ -42,7 +42,7 @@ function BlogPage() {
             View Random Blog
             <FontAwesomeIcon icon={faDice} className="fa-icon" />
           </button>
-          <BlogList variant="full" shuffleBlogs />
+          <BlogList variant="full" />
         </section>
       </Layout>
       <Footer />
