@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.fitharmony.fit/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Blog List Page -->
+  <url>
+    <loc>https://www.fitharmony.fit/blogs</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Individual Blog Pages - Replace with actual URLs -->
+  <url>
+    <loc>https://www.fitharmony.fit/blog/embracing-wellness-a-comprehensive-guide-to-nurturing-your-mind-body-and-spirit</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.fitharmony.fit/blog/mastering-the-art-of-meal-planning-a-guide-to-healthy-hassle-free-eating</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>unlocking-the-secrets-to-lifelong-wellness-exploring-the-comprehensive-health-benefits-of-a-balanced-lifestyle</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://www.fitharmony.fit/blog/maximizing-fitness-goals-with-the-best-home-gym-equipment</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://www.fitharmony.fit/blog/achieving-better-health-a-deep-dive-into-wellness-and-fitness-strategies</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Add more blog URLs as needed -->
+</urlset>
