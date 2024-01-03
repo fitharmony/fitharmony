@@ -3,9 +3,10 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import PageIntro from "../components/BlogIntro";
 import BlogList from "../components/BlogList";
-import Link from "next/link";
+import blogList from "../public/blogs.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDice } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
 
 function BlogPage() {
   return (
@@ -37,16 +38,46 @@ function BlogPage() {
         {/* </Link>s */}
         <section>
           {/* Button to view random blog */}
-          {/* <Link href="/blogs/[id]" as={`/blogs/${"randomBlogId"}`} className=""> */}
-          <button className="dark-variant" style={{ marginBottom: "1em" }}>
-            View Random Blog
-            <FontAwesomeIcon icon={faDice} className="fa-icon" />
-          </button>
+          <RandomBlogButton blogList={blogList.blogList} />
           <BlogList variant="full" />
         </section>
       </Layout>
       <Footer />
     </main>
+  );
+}
+
+function RandomBlogButton({ blogList }) {
+  // Get the Next.js router object
+  const router = useRouter();
+
+  // Function to handle the "View Random Blog" button click
+  const handleRandomBlogClick = () => {
+    // Generate a random index within the range of the blogList array
+    const randomIndex = Math.floor(Math.random() * blogList.length);
+
+    // Get the title of the randomly selected blog
+    const randomBlogTitle = encodeURIComponent(
+      blogList[randomIndex].title
+        .replace(/\s+/g, "-") // Replace spaces with hyphens
+        .replace(/:/g, "") // Remove colons
+        .replace(/,/g, "") // Remove commas
+        .toLowerCase() // Convert to lowercase
+    );
+
+    // Navigate to the selected blog's page
+    router.push(`/blog/${randomBlogTitle}`);
+  };
+
+  return (
+    <button
+      className="dark-variant"
+      style={{ marginBottom: "1em" }}
+      onClick={handleRandomBlogClick}
+    >
+      View Random Blog
+      <FontAwesomeIcon icon={faDice} className="fa-icon" />
+    </button>
   );
 }
 
