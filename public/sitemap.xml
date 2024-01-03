@@ -4,13 +4,13 @@
   <url>
     <loc>https://www.fitharmony.fit/</loc>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <!-- Blog List Page -->
   <url>
     <loc>https://www.fitharmony.fit/blogs</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <!-- Individual Blog Pages - Replace with actual URLs -->
   <url>
