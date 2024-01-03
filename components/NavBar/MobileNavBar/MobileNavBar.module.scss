@@ -22,7 +22,8 @@
       .mobileNavLinks {
         display: flex;
         flex-direction: column;
-        a {
+        a,
+        span {
           font-style: italic;
           font-size: 1.35em;
           padding: 1em 0;
