@@ -12,6 +12,7 @@ import Disclaimer from "../../components/Disclaimer";
 function BlogPage({ blog }) {
   // Modified to receive blog data as a prop
   // Remove the useEffect and router logic for fetching blog data
+  // Test.
 
   return (
     <main>
