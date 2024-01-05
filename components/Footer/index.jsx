@@ -36,8 +36,18 @@ const Footer = () => {
             </Link>
           </div>
           <div className={styles.bbFooter__container__right__text}>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms & Conditions</Link>
+            <Link
+              href="https://app.termly.io/document/privacy-policy/376338b7-9179-4f35-ac65-39312669e0d0"
+              target="_blank"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="https://app.termly.io/document/terms-of-service/ec22d35a-c7b5-4a6f-9bfb-8aa4a5f13463"
+              target="_blank"
+            >
+              Terms & Conditions
+            </Link>
           </div>
         </div>
       </div>
