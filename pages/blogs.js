@@ -28,6 +28,22 @@ function BlogPage() {
           name="description"
           content="Explore our wide range of fitness and wellness blogs covering various topics to help you on your wellness journey."
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-KE9GPRXLWN"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              window.dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-KE9GPRXLWN");
+          `,
+          }}
+        />
       </Head>
       <Layout showGradient={false} navTheme="white">
         <PageIntro
