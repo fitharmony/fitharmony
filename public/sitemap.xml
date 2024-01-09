@@ -38,5 +38,10 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.fitharmony.fit/blog/achieve-wellness-from-the-inside-out-exploring-the-health-benefits-of-infrared-saunas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
   <!-- Add more blog URLs as needed -->
 </urlset>
