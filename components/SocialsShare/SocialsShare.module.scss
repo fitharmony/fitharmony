@@ -1,0 +1,25 @@
+.socialsCtr {
+  display: flex;
+  margin-top: 2em;
+  color: white;
+  border-radius: 0.425em;
+  a {
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-right: 0.75em;
+    padding: 0.15em 1em;
+    display: flex;
+    align-items: center;
+    .socialIcon {
+      height: 13.5px;
+      width: 13.5px;
+      margin-right: 0.5em;
+    }
+  }
+  .fb {
+    background: #316ff6;
+  }
+  .x {
+    background: #000000;
+  }
+}

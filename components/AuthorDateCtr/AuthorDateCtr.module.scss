@@ -47,7 +47,6 @@
 
 @media (max-width: 640px) {
   .authorDateCtr {
-    flex-direction: column;
     .authorCtr {
       .authorImg {
         height: 41.5px;
@@ -59,7 +58,6 @@
       }
     }
     .datePosted {
-      padding-left: 3.35rem;
       margin-top: 0.25rem;
     }
   }

@@ -8,6 +8,7 @@ import PageIntro from "../../components/BlogIntro";
 import AuthorDateCtr from "../../components/AuthorDateCtr";
 import BlogList from "../../components/BlogList";
 import Disclaimer from "../../components/Disclaimer";
+import SocialsShare from "../../components/SocialsShare";
 
 function BlogPage({ blog }) {
   // Modified to receive blog data as a prop
@@ -52,8 +53,8 @@ function BlogPage({ blog }) {
             imageUrl={blog.imageUrl}
           />
           <AuthorDateCtr author={blog.author} date={blog["date-posted"]} />
+          <SocialsShare blogTitle={blog.title} />
           <Disclaimer />
-
           <div className="blog-content">
             {blog.content.map((content) => {
               return (
