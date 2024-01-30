@@ -43,8 +43,13 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.fitharmony.fit/blog/from-couch-potato-to-gym-enthusiast-a-step-by-step-guide-to-getting-started</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.fitharmony.fit/blog/calisthenics-a-beginner-guide-to-building-strength-and-flexibility-without-weights</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
