@@ -53,5 +53,15 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+    <url>
+    <loc>https://www.fitharmony.fit/blog/the-science-behind-preworkout-understanding-the-ingredients-and-benefits</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+      <url>
+    <loc>https://www.fitharmony.fit/blog/from-couch-potato-to-fit-bod-how-to-create-your-ideal-workout-routine</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
   <!-- Add more blog URLs as needed -->
 </urlset>
