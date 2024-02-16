@@ -4,6 +4,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import PageIntro from "../components/BlogIntro";
 import Disclaimer from "../components/Disclaimer";
+import BlogList from "../components/BlogList";
 
 function CalorieCalculator() {
   const [age, setAge] = useState("");
@@ -328,6 +329,7 @@ function CalorieCalculator() {
             </div>
           )}
         </section>
+        <BlogList variant="full" count={4} />
       </Layout>
       <Footer />
     </main>
