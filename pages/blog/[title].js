@@ -45,7 +45,7 @@ function BlogPage({ blog }) {
         />
       </Head>
       <Layout navTheme="white" showGradient={false}>
-        <article>
+        <article aria-labelledby="fitness-blog">
           <PageIntro
             title={blog.title}
             category={blog.category}

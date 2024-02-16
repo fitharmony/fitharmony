@@ -15,52 +15,57 @@
   <!-- Individual Blog Pages - Replace with actual URLs -->
   <url>
     <loc>https://www.fitharmony.fit/blog/embracing-wellness-a-comprehensive-guide-to-nurturing-your-mind-body-and-spirit</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.fitharmony.fit/blog/mastering-the-art-of-meal-planning-a-guide-to-healthy-hassle-free-eating</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>https://www.fitharmony.fit/blog/unlocking-the-secrets-to-lifelong-wellness-exploring-the-comprehensive-health-benefits-of-a-balanced-lifestyle</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>https://www.fitharmony.fit/blog/maximizing-fitness-goals-with-the-best-home-gym-equipment</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
     <url>
     <loc>https://www.fitharmony.fit/blog/achieving-better-health-a-deep-dive-into-wellness-and-fitness-strategies</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.fitharmony.fit/blog/achieve-wellness-from-the-inside-out-exploring-the-health-benefits-of-infrared-saunas</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.fitharmony.fit/blog/from-couch-potato-to-gym-enthusiast-a-step-by-step-guide-to-getting-started</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.fitharmony.fit/blog/calisthenics-a-beginner-guide-to-building-strength-and-flexibility-without-weights</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.fitharmony.fit/blog/the-science-behind-preworkout-understanding-the-ingredients-and-benefits</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-      <url>
+  <url>
     <loc>https://www.fitharmony.fit/blog/from-couch-potato-to-fit-bod-how-to-create-your-ideal-workout-routine</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.fitharmony.fit/calorie-calculator</loc>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 </urlset>

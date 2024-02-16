@@ -17,11 +17,11 @@ const NavBar = ({ navTheme = "dark" }) => {
         </Link>
         <div className={styles.options}>
           <Link href="/blogs">Fitness Blog</Link>
-          {/* <a className="disabled">Exercises</a> */}
-          <div className={`${styles.featuredCtr} disabled`}>
+          <Link href="/calorie-calculator">Calorie Calculator</Link>
+          {/* <div className={`${styles.featuredCtr} disabled`}>
             <span>Featured Products</span>
             <div className="featured">🔥COMING SOON</div>
-          </div>
+          </div> */}
         </div>
       </div>
       <a
